@@ -1,0 +1,952 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Owl Caraousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Div Section -->
+    <div class="container mx-auto px-2">
+        <div class=" grid grid-flow-row grid-cols-5" style='font-family: "Josefin Sans", sans-serif;'>
+            <!-- Left Section -->
+            <div class="bg-gradient-to-b from-teal-500 to-teal-500 via-teal-600 hidden lg:block h-screen justify-stretch items-center shadow-md rounded-xl sticky"
+                style="top: 0px;">
+                <div class="flex justify-center items-center h-screen">
+                    <div class="flex-col justify-center items-center p-4 m-1 gap-16 my-2">
+                        <!-- Images Profile -->
+                        <div
+                            class="flex justify-center items-center overflow-hidden rounded-full m-1 p-1 py border-yellow-300 border-8">
+                            <img src="./Images/Profile.png" alt="" class="scale-110 hover:scale-105 duration-300">
+                        </div>
+                        <!-- Images Profile ENd -->
+
+                        <!-- SOcial Media Handles -->
+                        <div class="flex justify-around items-center gap-2 my-4">
+                            <a href="#"
+                                class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+                                <img src="./Images/Linkedin.png" alt="" class="p-2" width="512px" height="512px">
+                            </a>
+                            <a href="#"
+                                class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+                                <img src="./Images/Github.png" alt="" class="p-2" width="512px" height="512px">
+                            </a>
+                            <a href="#"
+                                class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+                                <img src="./Images/Facebook.png" alt="" class="p-2" width="512px" height="512px">
+                            </a>
+                        </div>
+                        <!-- SOcial Media Handles ENd -->
+
+                        <!-- Links -->
+                        <div id="menu-content" class="my-2">
+                            <div class="flex-col justify-center items-center gap-2">
+                                <div
+                                    class="flex justify-center items-center hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#about'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">About Myself</span>
+                                    </a>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#project'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">Projects</span>
+                                    </a>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#education'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">Education</span>
+                                    </a>
+                                </div>
+                                <div
+                                    class="flex justify-center items-center hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#skills'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">Skills</span>
+                                    </a>
+                                </div>
+
+                                <div
+                                    class="flex justify-center items-center hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#achievements'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">Achievements</span>
+                                    </a>
+                                </div>
+
+                                <div
+                                    class="flex justify-center items-center py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent">
+                                    <a href='#contact'
+                                        class="block align-middle p-2 text-white no-underline hover:font-bold hover:text-yellow-300 transition duration-300 ease-in-out active:translate-x-2 active:translate-y-2 active:text-yellow-300">
+                                        <span class="text-lg text-center capitalize">Contact</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Links End-->
+                    </div>
+                </div>
+            </div>
+            <!-- Left Section End -->
+            <!-- Right Section -->
+            <div class="col-span-4 bg-white py-4 mt-2 px-2">
+                <div class="">
+
+                    <!-- About Section -->
+                    <div id="about" class="my-16 px-2 py-1">
+                        <div class="grid grid-cols-7 h-auto my-8">
+                            <!-- Left Section -->
+                            <div class="col-span-4 flex justify-center items-center ">
+                                <div class="flex-col justify-center">
+                                    <h1 class="font-bold text-2xl my-4 py-2 px-3">I'm
+                                        <span class="text-4xl uppercase text-teal-600">GOUR KRISHNA DEY</span>
+                                    </h1>
+                                    <h1 class="text-6xl text-gray-600 px-3">A
+                                        <span id="profession" class="text-7xl text-amber-400"
+                                            style='font-family: "Caveat Brush", cursive;'>
+
+                                        </span>
+                                    </h1>
+                                    <div class="my-4">
+                                        <p class="text-slate-600 text-2xl px-3 py-2 text-justify">
+                                            Crafting user-centered digital solutions that bridge creativity and
+                                            functionality. Let's transform your ideas into intuitive, stunning web
+                                            experiences. Explore my portfolio and let's collaborate on your next
+                                            project.
+                                        </p>
+                                        <!-- Buttons -->
+                                        <div class="flex justify-start items-center p-3 gap-3">
+                                            <a href="./PDF/GourKrishnaDey_Resume_APR2024.pdf" target="_blank">
+                                                <button class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
+                                            border-teal-800 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                            hover:text-white text-black bg-none text-xl font-semibold">
+                                                    <p class="text-xl">View Resume</p>
+                                                    <img src="./Images/Resume.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                            <a href="#" target="_blank">
+                                                <button class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
+                                                 border-teal-800 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                                 text-white hover:text-black hover:bg-none text-xl font-semibold">
+                                                    <p class="">Explore My Work</p>
+                                                    <img src="./Images/Explore.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Left Section -->
+                            <!-- Right Section -->
+                            <div class="col-span-3 py-2 px-1 mb-4">
+                                <div class="flex justify-center items-center overflow-hidden rounded-full">
+                                    <img src="./Images/20200623_233958.jpg" alt=""
+                                        class="w-max scale-110 hover:scale-100 duration-300">
+                                </div>
+                            </div>
+                            <!-- Right Section -->
+                        </div>
+
+
+
+                    </div>
+                    <!-- About Section End -->
+
+                    <!-- Project Section -->
+                    <div id="project" class=" bg-gray-100 px-2 py-8">
+                        <!-- Heading -->
+                        <div class="flex justify-start items-center gap-4 px-1 py-2">
+                            <span>
+                                <img src="./Images/Bullet.png" alt="" class="w-10">
+                            </span>
+                            <div class="flex justify-center items-center">
+                                <h1 class="text-red-500 font-bold text-3xl capitalize">
+                                    Major Projects that I’ve done yet</h1>
+                            </div>
+                        </div>
+                        <!-- Heading End -->
+
+                        <!-- Project 1 -->
+                        <div class="px-2 mx-4 py-2 shadow-md rounded-md bg-white my-2">
+
+                            <!-- Header Section -->
+                            <div id="project-head-1" class="grid grid-cols-12  px-2"
+                                style='font-family: "Inter", sans-serif;'>
+                                <div class="col-span-11 flex justify-start gap-4 my-2 items-center">
+                                    <div class="flex justify-start items-center">
+                                        <img src="./Images/AI.png" alt="" class="w-12">
+                                    </div>
+                                    <h1 class="font-semibold text-xl capitalize tracking-wider">Interview-Mitra (AI
+                                        powered exam
+                                        portal cum Job
+                                        Application portal )</h1>
+                                </div>
+                                <div class="flex justify-center items-center gap-4">
+                                    <a href="#" target="_blank" class="flex justify-center items-center rounded-full p-1 hover:border-2 duration-150
+                                     border-teal-600" title="Click to Explore">
+                                        <img src="./Images/LinkIcon.png" alt="" class="w-14">
+                                    </a>
+                                    <button onclick="openProjectDetails(1);"
+                                        class="flex justify-center items-center hover:scale-110 duration-150"
+                                        title="Expand">
+                                        <img id="arrow-1" src="./Images/DownArrow.png" alt="" class="w-14 rotate-180">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Header Section -->
+
+                            <!-- Body Part -->
+                            <div id="project-body-1" class="p-2">
+                                <div class="grid grid-cols-5">
+                                    <div class="col-span-4">
+                                        <div class="p-2 my-2 text-lg tracking-wide text-justify">
+                                            <p>Designed and developed UI and Frontend of 'Interviewmitra', an AI-powered
+                                                exam portal
+                                                offering a seamless job application platform for students and
+                                                streamlined hiring opportunities for recruiters with my team members .
+                                                Leveraged technology to bridge the gap between talent and employers,
+                                                enhancing recruitment efficiency and career prospects.</p>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="flex justify-start items-center px-3 py-1 gap-3">
+                                            <a href="./pagenotfound.html" target="_blank">
+                                                <button
+                                                    class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
+                                                    border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                                                                    hover:text-white text-teal-600 bg-none text-lg font-semibold">
+                                                    <p class="text-xl">Explore UI-Design</p>
+                                                    <img src="./Images/Figma.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                            <a href="./pagenotfound.html" target="_blank">
+                                                <button
+                                                    class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
+                                                    border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                                                                    text-white hover:text-teal-600 hover:bg-none text-lg font-semibold">
+                                                    <p class="">Interview-Mitra</p>
+                                                    <img src="./Images/Interviewmitra.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                    <div class="flex justify-center items-center p-2">
+                                        <img src="./Images/AI_Exam_Portal.jpg" alt="" class="w-auto">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Body Part End -->
+                        </div>
+                        <!-- Project 1 End-->
+
+                        <!-- Project 2 -->
+                        <div class="px-2 mx-4 py-2 shadow-md rounded-md bg-white my-2">
+
+                            <!-- Header Section -->
+                            <div id="project-head-2" class="grid grid-cols-12  px-2"
+                                style='font-family: "Inter", sans-serif;'>
+                                <div class="col-span-11 flex justify-start gap-4 my-2 items-center">
+                                    <div class="flex justify-start items-center">
+                                        <img src="./Images/Khana Khazana.png" alt="" class="w-12">
+                                    </div>
+                                    <h1 class="font-semibold text-xl capitalize tracking-wider">Urban Spice (A
+                                        Restaurant-Cum-Website Fusion for Enhanced Dining Experiences.)</h1>
+                                </div>
+                                <div class="flex justify-center items-center gap-4">
+                                    <a href="http://127.0.0.1:5503/index.html" target="_blank" class="flex justify-center items-center rounded-full p-1 hover:border-2 duration-150
+                                                             border-teal-600" title="Click to Explore">
+                                        <img src="./Images/LinkIcon.png" alt="" class="w-14">
+                                    </a>
+                                    <button onclick="openProjectDetails(2);"
+                                        class="flex justify-center items-center hover:scale-110 duration-150"
+                                        title="Expand">
+                                        <img id="arrow-2" src="./Images/DownArrow.png" alt="" class="w-14">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Header Section -->
+
+                            <!-- Body Part -->
+                            <div id="project-body-2" class="hidden p-2 mb-2">
+                                <div class="grid grid-cols-5">
+                                    <div class="flex justify-center items-center p-2">
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div class="grid grid-flow-row grid-rows-3 px-1 py-1">
+                                                <img src="./Images/R1.jpg" alt=""
+                                                    class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig"
+                                                    data-wow-delay="0.5s">
+                                                <img src="./Images/R2.jpg" alt=""
+                                                    class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-br-xl rounded-tl-xl wow fadeInLeftBig"
+                                                    data-wow-delay="0.5s">
+                                                <img src="./Images/R3.jfif" alt=""
+                                                    class="w-auto shadow-xl lg:hover:translate-x-4 duration-300 rounded-tr-xl rounded-bl-xl wow fadeInLeftBig"
+                                                    data-wow-delay="0.5s">
+                                            </div>
+                                            <div class="grid grid-rows-3">
+                                                <div class="row-span-3 flex justify-center items-center">
+                                                    <img src="./Images/R4.jfif" alt=""
+                                                        class=" shadow-xl lg:hover:translate-y-2 duration-300 rounded-tr-full wow fadeInLeftBig"
+                                                        data-wow-delay="0.5s">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-span-4">
+                                        <div class="p-2 my-2 text-lg tracking-wide text-justify">
+                                            <p>Used HTML for web page structure, Tailwind CSS for visually appealing
+                                                design, JavaScript and jQuery for interactivity, form validation for
+                                                user experience, Owl Carousels for image slideshows, Wow.js for scroll
+                                                animations, Animate.css for captivating animations. Designed a classic,
+                                                responsive website blending elegance with modern functionality.</p>
+                                        </div>
+                                        <!-- Buttons -->
+                                        <div class="flex justify-start items-center px-3 py-1 gap-3">
+                                            <a href="./pagenotfound.html" target="_blank">
+                                                <button
+                                                    class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
+                                                                            border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                                                                                            hover:text-white text-teal-600 bg-none text-lg font-semibold">
+                                                    <p class="text-xl">Explore UI-Design</p>
+                                                    <img src="./Images/Figma.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                            <a href="http://127.0.0.1:5503/index.html" target="_blank">
+                                                <button
+                                                    class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
+                                                                            border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
+                                                                                                            text-white hover:text-teal-600 hover:bg-none text-lg font-semibold">
+                                                    <p class="">Urban Spice</p>
+                                                    <img src="./Images/Khana Khazana.png" alt=""
+                                                        class="w-8 bg-white p-0.5 rounded-full">
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <!-- Buttons -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Body Part End -->
+                        </div>
+                        <!-- Project 2 End-->
+
+                        <!-- Heading 2 -->
+                        <div class="flex justify-start items-center gap-4 px-1 py-2 mt-12">
+                            <span>
+                                <img src="./Images/Bullet.png" alt="" class="w-10">
+                            </span>
+                            <div class="flex justify-center items-center">
+                                <h1 class="text-red-500 font-bold text-3xl capitalize">
+                                    Other Projects</h1>
+                            </div>
+                        </div>
+                        <!-- Heading 2 End -->
+
+                        <!-- Carousel -->
+                        <div class="px-3 py-1.5">
+                            <div class="owl-carousel owl-theme px-1 py-2 text-xs lg:text-base">
+
+                                <!-- Items-1 -->
+                                <a href="https://gkdey17cse.github.io/InfoAidtech_Internship/Task1_ProductLandingPage.html"
+                                    target="_blank" class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <img class="w-full object-cover object-center px-2 py-1 mt-2 rounded-xl h-auto"
+                                            src="./Images/Project_1.jpg" alt="blog">
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">Product Landing
+                                                Page
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                I've crafted an immersive digital store with HTML, CSS, JavaScript, and
+                                                Wow.js for an engaging online shopping experience.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-1 end -->
+
+                                <!-- Items-2 -->
+                                <a href="https://gkdey17cse.github.io/InfoAidtech_Internship/Task2_Calculator.html"
+                                    target="_blank" class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <img class="w-full object-cover object-center px-2 py-1 mt-2 rounded-xl h-auto"
+                                            src="./Images/Project_2.jpg" alt="blog">
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">Simple Calculator
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                Showcasing JavaScript skills and UI design with a functional calculator
+                                                project, delving into the world of numbers in a concise manner.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-2 end -->
+
+                                <!-- Items-3 -->
+                                <a href="https://gkdey17cse.github.io/InfoAidtech_Internship/Task3_TemparatureConver.html"
+                                    target="_blank" class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <div class="flex justify-center items-center px-2 py-1 mt-2">
+                                            <img class="w-full object-cover object-center  rounded-xl h-auto"
+                                                src="./Images/Project_3.jpg" alt="blog">
+                                        </div>
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">Temperature Converter
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                Experience my temperature converter, effortlessly switching between
+                                                Centigrade, Kelvin, and Fahrenheit, demonstrating my web app development
+                                                and user-friendly design prowess.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-3 end -->
+
+                                <!-- Items-4 -->
+                                <a href="https://gkdey17cse.github.io/OCTANET_NOVEMBER/todolist.html" target="_blank"
+                                    class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <div class="flex justify-center items-center px-2 py-1 mt-2">
+                                            <img class="w-full object-cover object-center  rounded-xl h-auto"
+                                                src="./Images/Project_4_TodoList.jpg" alt="blog">
+                                        </div>
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">To_Do List
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                Crafted a sleek todo list with HTML, Tailwind CSS, and JavaScript,
+                                                showcasing efficient task management in my portfolio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-4 end -->
+
+                                <!-- Items-5 -->
+                                <a href="https://gkdey17cse.github.io/TechnoHacks_Webdevelopment/src/Task2_CurrencyConverter.html"
+                                    target="_blank" class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <div class="flex justify-center items-center px-2 py-1 mt-2">
+                                            <img class="w-full object-cover object-center  rounded-xl h-auto"
+                                                src="./Images/Project_5_CurrencyConverter.jpg" alt="blog">
+                                        </div>
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">Currency Converter
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                I developed a Currency Converter using HTML, Tailwind CSS, and
+                                                JavaScript, supporting nine major currency conversions, showcased in my
+                                                portfolio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-5 end -->
+
+                                <!-- Items-6 -->
+                                <a href="https://gkdey17cse.github.io/TechnoHacks_Webdevelopment/src/Task3_RegistrationForm.html"
+                                    target="_blank" class="">
+                                    <div style="height: 420px;"
+                                        class="flex flex-col justify-center items-center gap-2 bg-white rounded-lg overflow-hidden px-2 py-1 hover:shadow-md duration-150 active:translate-x-1 active:translate-y-1">
+                                        <div class="flex justify-center items-center px-2 py-1 mt-2">
+                                            <img class="w-full object-cover object-center  rounded-xl h-auto"
+                                                src="./Images/Project_6_RegistrationForm.jpg" alt="blog">
+                                        </div>
+                                        <div class="py-6 px-5">
+                                            <h2 class="text-md title-font font-medium text-gray-600 mb-1">
+                                                Domain : <span class="font-semibold">Web Development</span></h2>
+                                            <h1 class="text-xl font-bold text-gray-900 mb-3">JQuery Form Validation
+                                            </h1>
+                                            <p class="text-justify mb-2 text-md">
+                                                I developed a form validation system using HTML, Tailwind CSS, and
+                                                jQuery for efficient client-side validation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- Items-6 end -->
+                            </div>
+                        </div>
+                        <!-- Carousel End -->
+
+                    </div>
+                    <!-- Project Section End -->
+
+                    <!-- Education Section -->
+                    <div id="education" class="mt-4 px-2 py-1">
+                        <h1 class="text-red-500 font-bold text-xl">Education</h1>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vero aspernatur cupiditate
+                        nobis quia sed dolorum necessitatibus. Sapiente nostrum ex ducimus laboriosam, nemo doloremque
+                        assumenda nesciunt dolorem exercitationem animi odit quis accusantium sed minus consequuntur
+                        sint, enim deserunt consectetur optio adipisci rem atque? Ipsa, temporibus. Animi perspiciatis
+                        hic blanditiis temporibus, culpa eum accusamus laboriosam ex minus, ullam delectus accusantium
+                        iure nesciunt recusandae iste est repudiandae nulla, voluptate consequatur sunt nostrum vitae
+                        quod quam unde. Odit, et eligendi. Est fugit maiores enim voluptatem. Quo corrupti mollitia odio
+                        voluptate consectetur illum, deserunt inventore in distinctio quia sequi dolore dicta minus
+                        adipisci voluptatem, laudantium eos voluptates! Maiores ad blanditiis iusto cupiditate libero
+                        quisquam ullam reiciendis, similique dolorum consequatur incidunt officia eum, dicta accusantium
+                        eveniet corporis exercitationem consectetur quaerat omnis molestias magnam! Porro, sapiente
+                        debitis, ratione reiciendis adipisci pariatur unde, natus vel impedit neque commodi deserunt
+                        asperiores aperiam. Asperiores temporibus a nam autem esse! Earum fuga, soluta officiis nobis
+                        culpa molestias doloremque blanditiis aliquam quam aperiam quisquam placeat ullam aliquid
+                        voluptatem, libero adipisci expedita illum ea error? Vel eaque dignissimos ducimus earum ut
+                        rerum mollitia nesciunt. Fuga culpa id, suscipit quam sapiente laboriosam. Voluptatum atque sed
+                        commodi corporis sapiente voluptate expedita officiis id nam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos cupiditate quam culpa eaque,
+                        facilis, exercitationem quis, suscipit consequatur ab est dolores veniam nihil odit adipisci
+                        obcaecati? Unde, nesciunt delectus? Beatae atque eaque est vero illo distinctio, reprehenderit
+                        minima tempore, id voluptatibus iste totam tenetur pariatur ratione, ipsam dolorem dolorum quam
+                        culpa. Voluptates fugit temporibus voluptatibus eum maxime dolor earum rem neque voluptas! Ut
+                        possimus incidunt maiores similique illum nobis dolor commodi suscipit odio libero eos quidem,
+                        eum, porro pariatur distinctio ipsum omnis culpa unde. Debitis exercitationem nesciunt tenetur
+                        doloremque eligendi cupiditate, hic distinctio ex quisquam deleniti dolorum voluptate ut fugit
+                        sed eaque facere? Explicabo asperiores consequuntur, perspiciatis architecto voluptas, impedit
+                        placeat magni hic vel quibusdam quasi unde voluptates obcaecati! Animi dolores accusamus tenetur
+                        omnis, ipsam deserunt? Nihil dolore vitae odit amet pariatur eos, magnam quia accusantium
+                        explicabo ipsa necessitatibus nostrum doloribus maiores, incidunt obcaecati natus! Hic ducimus
+                        dolorum repudiandae nihil. Ipsam earum deleniti, iusto incidunt ratione labore explicabo. Porro,
+                        atque officia molestias cum voluptatum distinctio delectus necessitatibus, totam sunt esse
+                        obcaecati maiores! Pariatur eum accusantium minima maiores fugit quasi amet facere repellendus
+                        quo veritatis? Corrupti laudantium consequuntur minus ab debitis veniam voluptates quidem omnis,
+                        vel aspernatur accusantium sit veritatis? Distinctio quibusdam corrupti officia deleniti nulla,
+                        inventore eaque molestiae commodi sapiente consequatur at minus quam maiores vitae totam animi,
+                        doloribus saepe! Velit autem quam tenetur maxime quos praesentium sint, dignissimos deleniti
+                        harum veniam molestias officiis qui delectus quasi? Harum placeat perspiciatis, explicabo culpa
+                        ut, quas veniam voluptates ducimus fugit totam sapiente maxime delectus nesciunt ab expedita.
+                        Dolor distinctio error neque asperiores. Dolorum, ut ad. Aut nihil adipisci officia libero
+                        assumenda labore voluptas vero nisi sunt, error quibusdam natus quasi quas incidunt laborum
+                        distinctio saepe officiis, deserunt quos. Asperiores recusandae iusto consectetur est dolores
+                        incidunt impedit ratione quasi hic neque, repellat iure nobis explicabo doloribus in facere
+                        libero ullam molestias magni autem! Eligendi soluta nesciunt dolor doloribus veritatis beatae
+                        sunt vel blanditiis quaerat earum enim vero deserunt molestias, officia sint quasi sed eum quia
+                        a veniam itaque, error dicta odit. Quidem consequuntur, mollitia asperiores sunt laboriosam
+                        temporibus! Aut consequuntur quo, ab eaque repellat eveniet nemo similique nulla recusandae
+                        saepe repellendus omnis rerum, iste asperiores exercitationem aspernatur magnam ipsam fuga
+                        temporibus. Sunt sapiente cumque laboriosam totam eos aperiam debitis vel neque expedita quia
+                        harum eum sed omnis maxime animi voluptatum fugit accusantium, obcaecati odio assumenda. Itaque
+                        praesentium eius delectus voluptatibus repudiandae repellat, corrupti aliquam illum dolorem
+                        optio similique suscipit magni, error saepe laboriosam minus nesciunt id, provident architecto
+                        dolor eligendi. Nihil repellat libero aliquam beatae distinctio assumenda necessitatibus vel
+                        ducimus magni dolore fugiat labore atque aliquid commodi rem, nam temporibus porro laudantium ea
+                        doloribus doloremque laboriosam! Aperiam dolorem sint vel earum illo distinctio aliquid itaque
+                        accusantium nesciunt. Beatae nihil exercitationem fugit laborum minus dolore dolor pariatur
+                        excepturi laudantium corporis. Nulla modi aliquam temporibus assumenda eos veniam cumque neque
+                        qui natus. Architecto recusandae ipsam commodi cumque dignissimos quasi fugit aperiam temporibus
+                        necessitatibus quae dolor nostrum doloribus adipisci nam, omnis harum perspiciatis at ipsa nemo!
+                    </div>
+                    <!-- Education Section End -->
+
+                    <!-- Skills Section -->
+                    <div id="skills" class="mt-4 px-2 py-1">
+                        <h1 class="text-red-500 font-bold text-xl">SKILLS</h1>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vero aspernatur cupiditate
+                        nobis quia sed dolorum necessitatibus. Sapiente nostrum ex ducimus laboriosam, nemo doloremque
+                        assumenda nesciunt dolorem exercitationem animi odit quis accusantium sed minus consequuntur
+                        sint, enim deserunt consectetur optio adipisci rem atque? Ipsa, temporibus. Animi perspiciatis
+                        hic blanditiis temporibus, culpa eum accusamus laboriosam ex minus, ullam delectus accusantium
+                        iure nesciunt recusandae iste est repudiandae nulla, voluptate consequatur sunt nostrum vitae
+                        quod quam unde. Odit, et eligendi. Est fugit maiores enim voluptatem. Quo corrupti mollitia odio
+                        voluptate consectetur illum, deserunt inventore in distinctio quia sequi dolore dicta minus
+                        adipisci voluptatem, laudantium eos voluptates! Maiores ad blanditiis iusto cupiditate libero
+                        quisquam ullam reiciendis, similique dolorum consequatur incidunt officia eum, dicta accusantium
+                        eveniet corporis exercitationem consectetur quaerat omnis molestias magnam! Porro, sapiente
+                        debitis, ratione reiciendis adipisci pariatur unde, natus vel impedit neque commodi deserunt
+                        asperiores aperiam. Asperiores temporibus a nam autem esse! Earum fuga, soluta officiis nobis
+                        culpa molestias doloremque blanditiis aliquam quam aperiam quisquam placeat ullam aliquid
+                        voluptatem, libero adipisci expedita illum ea error? Vel eaque dignissimos ducimus earum ut
+                        rerum mollitia nesciunt. Fuga culpa id, suscipit quam sapiente laboriosam. Voluptatum atque sed
+                        commodi corporis sapiente voluptate expedita officiis id nam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos cupiditate quam culpa eaque,
+                        facilis, exercitationem quis, suscipit consequatur ab est dolores veniam nihil odit adipisci
+                        obcaecati? Unde, nesciunt delectus? Beatae atque eaque est vero illo distinctio, reprehenderit
+                        minima tempore, id voluptatibus iste totam tenetur pariatur ratione, ipsam dolorem dolorum quam
+                        culpa. Voluptates fugit temporibus voluptatibus eum maxime dolor earum rem neque voluptas! Ut
+                        possimus incidunt maiores similique illum nobis dolor commodi suscipit odio libero eos quidem,
+                        eum, porro pariatur distinctio ipsum omnis culpa unde. Debitis exercitationem nesciunt tenetur
+                        doloremque eligendi cupiditate, hic distinctio ex quisquam deleniti dolorum voluptate ut fugit
+                        sed eaque facere? Explicabo asperiores consequuntur, perspiciatis architecto voluptas, impedit
+                        placeat magni hic vel quibusdam quasi unde voluptates obcaecati! Animi dolores accusamus tenetur
+                        omnis, ipsam deserunt? Nihil dolore vitae odit amet pariatur eos, magnam quia accusantium
+                        explicabo ipsa necessitatibus nostrum doloribus maiores, incidunt obcaecati natus! Hic ducimus
+                        dolorum repudiandae nihil. Ipsam earum deleniti, iusto incidunt ratione labore explicabo. Porro,
+                        atque officia molestias cum voluptatum distinctio delectus necessitatibus, totam sunt esse
+                        obcaecati maiores! Pariatur eum accusantium minima maiores fugit quasi amet facere repellendus
+                        quo veritatis? Corrupti laudantium consequuntur minus ab debitis veniam voluptates quidem omnis,
+                        vel aspernatur accusantium sit veritatis? Distinctio quibusdam corrupti officia deleniti nulla,
+                        inventore eaque molestiae commodi sapiente consequatur at minus quam maiores vitae totam animi,
+                        doloribus saepe! Velit autem quam tenetur maxime quos praesentium sint, dignissimos deleniti
+                        harum veniam molestias officiis qui delectus quasi? Harum placeat perspiciatis, explicabo culpa
+                        ut, quas veniam voluptates ducimus fugit totam sapiente maxime delectus nesciunt ab expedita.
+                        Dolor distinctio error neque asperiores. Dolorum, ut ad. Aut nihil adipisci officia libero
+                        assumenda labore voluptas vero nisi sunt, error quibusdam natus quasi quas incidunt laborum
+                        distinctio saepe officiis, deserunt quos. Asperiores recusandae iusto consectetur est dolores
+                        incidunt impedit ratione quasi hic neque, repellat iure nobis explicabo doloribus in facere
+                        libero ullam molestias magni autem! Eligendi soluta nesciunt dolor doloribus veritatis beatae
+                        sunt vel blanditiis quaerat earum enim vero deserunt molestias, officia sint quasi sed eum quia
+                        a veniam itaque, error dicta odit. Quidem consequuntur, mollitia asperiores sunt laboriosam
+                        temporibus! Aut consequuntur quo, ab eaque repellat eveniet nemo similique nulla recusandae
+                        saepe repellendus omnis rerum, iste asperiores exercitationem aspernatur magnam ipsam fuga
+                        temporibus. Sunt sapiente cumque laboriosam totam eos aperiam debitis vel neque expedita quia
+                        harum eum sed omnis maxime animi voluptatum fugit accusantium, obcaecati odio assumenda. Itaque
+                        praesentium eius delectus voluptatibus repudiandae repellat, corrupti aliquam illum dolorem
+                        optio similique suscipit magni, error saepe laboriosam minus nesciunt id, provident architecto
+                        dolor eligendi. Nihil repellat libero aliquam beatae distinctio assumenda necessitatibus vel
+                        ducimus magni dolore fugiat labore atque aliquid commodi rem, nam temporibus porro laudantium ea
+                        doloribus doloremque laboriosam! Aperiam dolorem sint vel earum illo distinctio aliquid itaque
+                        accusantium nesciunt. Beatae nihil exercitationem fugit laborum minus dolore dolor pariatur
+                        excepturi laudantium corporis. Nulla modi aliquam temporibus assumenda eos veniam cumque neque
+                        qui natus. Architecto recusandae ipsam commodi cumque dignissimos quasi fugit aperiam temporibus
+                        necessitatibus quae dolor nostrum doloribus adipisci nam, omnis harum perspiciatis at ipsa nemo!
+                    </div>
+                    <!-- Skills Section End -->
+
+                    <!-- Achievements Section -->
+                    <div id="achievements" class="mt-4 px-2 py-1">
+                        <h1 class="text-red-500 font-bold text-xl">ACHIEVEMENTS</h1>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vero aspernatur cupiditate
+                        nobis quia sed dolorum necessitatibus. Sapiente nostrum ex ducimus laboriosam, nemo doloremque
+                        assumenda nesciunt dolorem exercitationem animi odit quis accusantium sed minus consequuntur
+                        sint, enim deserunt consectetur optio adipisci rem atque? Ipsa, temporibus. Animi perspiciatis
+                        hic blanditiis temporibus, culpa eum accusamus laboriosam ex minus, ullam delectus accusantium
+                        iure nesciunt recusandae iste est repudiandae nulla, voluptate consequatur sunt nostrum vitae
+                        quod quam unde. Odit, et eligendi. Est fugit maiores enim voluptatem. Quo corrupti mollitia odio
+                        voluptate consectetur illum, deserunt inventore in distinctio quia sequi dolore dicta minus
+                        adipisci voluptatem, laudantium eos voluptates! Maiores ad blanditiis iusto cupiditate libero
+                        quisquam ullam reiciendis, similique dolorum consequatur incidunt officia eum, dicta accusantium
+                        eveniet corporis exercitationem consectetur quaerat omnis molestias magnam! Porro, sapiente
+                        debitis, ratione reiciendis adipisci pariatur unde, natus vel impedit neque commodi deserunt
+                        asperiores aperiam. Asperiores temporibus a nam autem esse! Earum fuga, soluta officiis nobis
+                        culpa molestias doloremque blanditiis aliquam quam aperiam quisquam placeat ullam aliquid
+                        voluptatem, libero adipisci expedita illum ea error? Vel eaque dignissimos ducimus earum ut
+                        rerum mollitia nesciunt. Fuga culpa id, suscipit quam sapiente laboriosam. Voluptatum atque sed
+                        commodi corporis sapiente voluptate expedita officiis id nam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos cupiditate quam culpa eaque,
+                        facilis, exercitationem quis, suscipit consequatur ab est dolores veniam nihil odit adipisci
+                        obcaecati? Unde, nesciunt delectus? Beatae atque eaque est vero illo distinctio, reprehenderit
+                        minima tempore, id voluptatibus iste totam tenetur pariatur ratione, ipsam dolorem dolorum quam
+                        culpa. Voluptates fugit temporibus voluptatibus eum maxime dolor earum rem neque voluptas! Ut
+                        possimus incidunt maiores similique illum nobis dolor commodi suscipit odio libero eos quidem,
+                        eum, porro pariatur distinctio ipsum omnis culpa unde. Debitis exercitationem nesciunt tenetur
+                        doloremque eligendi cupiditate, hic distinctio ex quisquam deleniti dolorum voluptate ut fugit
+                        sed eaque facere? Explicabo asperiores consequuntur, perspiciatis architecto voluptas, impedit
+                        placeat magni hic vel quibusdam quasi unde voluptates obcaecati! Animi dolores accusamus tenetur
+                        omnis, ipsam deserunt? Nihil dolore vitae odit amet pariatur eos, magnam quia accusantium
+                        explicabo ipsa necessitatibus nostrum doloribus maiores, incidunt obcaecati natus! Hic ducimus
+                        dolorum repudiandae nihil. Ipsam earum deleniti, iusto incidunt ratione labore explicabo. Porro,
+                        atque officia molestias cum voluptatum distinctio delectus necessitatibus, totam sunt esse
+                        obcaecati maiores! Pariatur eum accusantium minima maiores fugit quasi amet facere repellendus
+                        quo veritatis? Corrupti laudantium consequuntur minus ab debitis veniam voluptates quidem omnis,
+                        vel aspernatur accusantium sit veritatis? Distinctio quibusdam corrupti officia deleniti nulla,
+                        inventore eaque molestiae commodi sapiente consequatur at minus quam maiores vitae totam animi,
+                        doloribus saepe! Velit autem quam tenetur maxime quos praesentium sint, dignissimos deleniti
+                        harum veniam molestias officiis qui delectus quasi? Harum placeat perspiciatis, explicabo culpa
+                        ut, quas veniam voluptates ducimus fugit totam sapiente maxime delectus nesciunt ab expedita.
+                        Dolor distinctio error neque asperiores. Dolorum, ut ad. Aut nihil adipisci officia libero
+                        assumenda labore voluptas vero nisi sunt, error quibusdam natus quasi quas incidunt laborum
+                        distinctio saepe officiis, deserunt quos. Asperiores recusandae iusto consectetur est dolores
+                        incidunt impedit ratione quasi hic neque, repellat iure nobis explicabo doloribus in facere
+                        libero ullam molestias magni autem! Eligendi soluta nesciunt dolor doloribus veritatis beatae
+                        sunt vel blanditiis quaerat earum enim vero deserunt molestias, officia sint quasi sed eum quia
+                        a veniam itaque, error dicta odit. Quidem consequuntur, mollitia asperiores sunt laboriosam
+                        temporibus! Aut consequuntur quo, ab eaque repellat eveniet nemo similique nulla recusandae
+                        saepe repellendus omnis rerum, iste asperiores exercitationem aspernatur magnam ipsam fuga
+                        temporibus. Sunt sapiente cumque laboriosam totam eos aperiam debitis vel neque expedita quia
+                        harum eum sed omnis maxime animi voluptatum fugit accusantium, obcaecati odio assumenda. Itaque
+                        praesentium eius delectus voluptatibus repudiandae repellat, corrupti aliquam illum dolorem
+                        optio similique suscipit magni, error saepe laboriosam minus nesciunt id, provident architecto
+                        dolor eligendi. Nihil repellat libero aliquam beatae distinctio assumenda necessitatibus vel
+                        ducimus magni dolore fugiat labore atque aliquid commodi rem, nam temporibus porro laudantium ea
+                        doloribus doloremque laboriosam! Aperiam dolorem sint vel earum illo distinctio aliquid itaque
+                        accusantium nesciunt. Beatae nihil exercitationem fugit laborum minus dolore dolor pariatur
+                        excepturi laudantium corporis. Nulla modi aliquam temporibus assumenda eos veniam cumque neque
+                        qui natus. Architecto recusandae ipsam commodi cumque dignissimos quasi fugit aperiam temporibus
+                        necessitatibus quae dolor nostrum doloribus adipisci nam, omnis harum perspiciatis at ipsa nemo!
+                    </div>
+                    <!-- Achievements Section End -->
+
+                    <!-- Contact Section -->
+                    <div id="contact" class="mt-4 px-2 py-1">
+                        <h1 class="text-red-500 font-bold text-xl">CONTACT</h1>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vero aspernatur cupiditate
+                        nobis quia sed dolorum necessitatibus. Sapiente nostrum ex ducimus laboriosam, nemo doloremque
+                        assumenda nesciunt dolorem exercitationem animi odit quis accusantium sed minus consequuntur
+                        sint, enim deserunt consectetur optio adipisci rem atque? Ipsa, temporibus. Animi perspiciatis
+                        hic blanditiis temporibus, culpa eum accusamus laboriosam ex minus, ullam delectus accusantium
+                        iure nesciunt recusandae iste est repudiandae nulla, voluptate consequatur sunt nostrum vitae
+                        quod quam unde. Odit, et eligendi. Est fugit maiores enim voluptatem. Quo corrupti mollitia odio
+                        voluptate consectetur illum, deserunt inventore in distinctio quia sequi dolore dicta minus
+                        adipisci voluptatem, laudantium eos voluptates! Maiores ad blanditiis iusto cupiditate libero
+                        quisquam ullam reiciendis, similique dolorum consequatur incidunt officia eum, dicta accusantium
+                        eveniet corporis exercitationem consectetur quaerat omnis molestias magnam! Porro, sapiente
+                        debitis, ratione reiciendis adipisci pariatur unde, natus vel impedit neque commodi deserunt
+                        asperiores aperiam. Asperiores temporibus a nam autem esse! Earum fuga, soluta officiis nobis
+                        culpa molestias doloremque blanditiis aliquam quam aperiam quisquam placeat ullam aliquid
+                        voluptatem, libero adipisci expedita illum ea error? Vel eaque dignissimos ducimus earum ut
+                        rerum mollitia nesciunt. Fuga culpa id, suscipit quam sapiente laboriosam. Voluptatum atque sed
+                        commodi corporis sapiente voluptate expedita officiis id nam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos cupiditate quam culpa eaque,
+                        facilis, exercitationem quis, suscipit consequatur ab est dolores veniam nihil odit adipisci
+                        obcaecati? Unde, nesciunt delectus? Beatae atque eaque est vero illo distinctio, reprehenderit
+                        minima tempore, id voluptatibus iste totam tenetur pariatur ratione, ipsam dolorem dolorum quam
+                        culpa. Voluptates fugit temporibus voluptatibus eum maxime dolor earum rem neque voluptas! Ut
+                        possimus incidunt maiores similique illum nobis dolor commodi suscipit odio libero eos quidem,
+                        eum, porro pariatur distinctio ipsum omnis culpa unde. Debitis exercitationem nesciunt tenetur
+                        doloremque eligendi cupiditate, hic distinctio ex quisquam deleniti dolorum voluptate ut fugit
+                        sed eaque facere? Explicabo asperiores consequuntur, perspiciatis architecto voluptas, impedit
+                        placeat magni hic vel quibusdam quasi unde voluptates obcaecati! Animi dolores accusamus tenetur
+                        omnis, ipsam deserunt? Nihil dolore vitae odit amet pariatur eos, magnam quia accusantium
+                        explicabo ipsa necessitatibus nostrum doloribus maiores, incidunt obcaecati natus! Hic ducimus
+                        dolorum repudiandae nihil. Ipsam earum deleniti, iusto incidunt ratione labore explicabo. Porro,
+                        atque officia molestias cum voluptatum distinctio delectus necessitatibus, totam sunt esse
+                        obcaecati maiores! Pariatur eum accusantium minima maiores fugit quasi amet facere repellendus
+                        quo veritatis? Corrupti laudantium consequuntur minus ab debitis veniam voluptates quidem omnis,
+                        vel aspernatur accusantium sit veritatis? Distinctio quibusdam corrupti officia deleniti nulla,
+                        inventore eaque molestiae commodi sapiente consequatur at minus quam maiores vitae totam animi,
+                        doloribus saepe! Velit autem quam tenetur maxime quos praesentium sint, dignissimos deleniti
+                        harum veniam molestias officiis qui delectus quasi? Harum placeat perspiciatis, explicabo culpa
+                        ut, quas veniam voluptates ducimus fugit totam sapiente maxime delectus nesciunt ab expedita.
+                        Dolor distinctio error neque asperiores. Dolorum, ut ad. Aut nihil adipisci officia libero
+                        assumenda labore voluptas vero nisi sunt, error quibusdam natus quasi quas incidunt laborum
+                        distinctio saepe officiis, deserunt quos. Asperiores recusandae iusto consectetur est dolores
+                        incidunt impedit ratione quasi hic neque, repellat iure nobis explicabo doloribus in facere
+                        libero ullam molestias magni autem! Eligendi soluta nesciunt dolor doloribus veritatis beatae
+                        sunt vel blanditiis quaerat earum enim vero deserunt molestias, officia sint quasi sed eum quia
+                        a veniam itaque, error dicta odit. Quidem consequuntur, mollitia asperiores sunt laboriosam
+                        temporibus! Aut consequuntur quo, ab eaque repellat eveniet nemo similique nulla recusandae
+                        saepe repellendus omnis rerum, iste asperiores exercitationem aspernatur magnam ipsam fuga
+                        temporibus. Sunt sapiente cumque laboriosam totam eos aperiam debitis vel neque expedita quia
+                        harum eum sed omnis maxime animi voluptatum fugit accusantium, obcaecati odio assumenda. Itaque
+                        praesentium eius delectus voluptatibus repudiandae repellat, corrupti aliquam illum dolorem
+                        optio similique suscipit magni, error saepe laboriosam minus nesciunt id, provident architecto
+                        dolor eligendi. Nihil repellat libero aliquam beatae distinctio assumenda necessitatibus vel
+                        ducimus magni dolore fugiat labore atque aliquid commodi rem, nam temporibus porro laudantium ea
+                        doloribus doloremque laboriosam! Aperiam dolorem sint vel earum illo distinctio aliquid itaque
+                        accusantium nesciunt. Beatae nihil exercitationem fugit laborum minus dolore dolor pariatur
+                        excepturi laudantium corporis. Nulla modi aliquam temporibus assumenda eos veniam cumque neque
+                        qui natus. Architecto recusandae ipsam commodi cumque dignissimos quasi fugit aperiam temporibus
+                        necessitatibus quae dolor nostrum doloribus adipisci nam, omnis harum perspiciatis at ipsa nemo!
+                    </div>
+                    <!-- Contact Section End -->
+                </div>
+            </div>
+            <!-- Right Section End -->
+        </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Owl Carousel .js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1100: {
+                    items: 2
+                },
+                1400: {
+                    items: 3
+                }
+            }
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+
+    <!-- Type JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#profession', {
+            strings: ['UI-UX Designer', 'Software Engineer', 'Front End Developer'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+    <!-- Arrow Rotator and expand section -->
+    <script>
+        function openProjectDetails(num) {
+            var body = "project-body-" + num;
+            var arrow = "arrow-" + num;
+
+            let x = document.getElementById(body);
+            let y = document.getElementById(body).classList
+            let btn = document.getElementById(arrow).classList;
+
+            if (x.style.display !== "block") {
+                x.style.display = "block";
+                btn.add("rotate-180");
+                btn.add("duration-300");
+                y.add("duration-300");
+
+
+                for (i = 1; i < 10; i++) {
+                    if (i == num) { continue; }
+                    var body = "project-body-" + i;
+                    var arrow = "arrow-" + i;
+                    let x = document.getElementById(body);
+                    let btn = document.getElementById(arrow).classList;
+                    let y = document.getElementById(body).classList
+
+                    y.add("duration-300");
+                    x.style.display = "none";
+                    btn.remove("rotate-180");
+                    btn.add("duration-300");
+
+                }
+            } else if (x.style.display !== "none") {
+                // for (i = 1; i < 10; i++) {
+                x.style.display = "none";
+                btn.remove("rotate-180");
+                btn.add("duration-300");
+                y.add("duration-300");
+                // }
+            }
+
+        }
+        function openProjectDetails2(num) {
+            var body = "project-body-" + num;
+            var arrow = "arrow-" + num;
+
+            let x = document.getElementById(body);
+            let btn = document.getElementById(arrow).classList;
+
+            if (x.style.display !== "block") {
+                x.style.display = "block";
+                btn.add("rotate-180");
+            } else {
+                x.style.display = "none";
+                btn.remove("rotate-180");
+            }
+
+            btn.add("duration-300");
+        }
+    </script>
+
+    <!-- Scroll Spy -->
+    <script>
+        /* http://jsfiddle.net/LwLBx/ */
+
+        // Cache selectors
+        var lastId,
+            topMenu = $("#menu-content"),
+            topMenuHeight = topMenu.outerHeight() - 250,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            });
+
+        // Bind click handler to menu items
+        // so we can get a fancy scroll animation
+        menuItems.click(function (e) {
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            $('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 300);
+            if (!helpMenuDiv.classList.contains("hidden")) {
+                helpMenuDiv.classList.add("hidden");
+            }
+            e.preventDefault();
+        });
+
+        // Bind to scroll
+        $(window).scroll(function () {
+            // Get container scroll position
+            var fromTop = $(this).scrollTop() + topMenuHeight;
+
+            // Get id of current scroll item
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop)
+                    return this;
+            });
+            // Get the id of the current element
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+                lastId = id;
+                // Set/remove active class
+                menuItems
+                    .parent().removeClass("font-bold border-yellow-600")
+                    .end().filter("[href='#" + id + "']").parent().addClass("font-bold transition");
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
