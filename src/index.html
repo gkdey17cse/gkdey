@@ -26,13 +26,13 @@
 
 <body>
     <!-- Div Section -->
-    <div class="container mx-auto px-2">
+    <div class="container mx-auto">
         <div class="lg:grid grid-flow-row grid-cols-5" style='font-family: "Josefin Sans", sans-serif;'>
             <!-- Left Section -->
             <div class="bg-gradient-to-b from-teal-500 to-teal-500 via-teal-600 hidden lg:block h-screen justify-stretch items-center shadow-md rounded-xl sticky"
                 style="top: 0px;">
                 <div class="flex justify-center items-center h-screen">
-                    <div class="flex-col justify-center items-center p-4 m-1 gap-16 my-2">
+                    <div class="flex-col justify-center items-center p-4 gap-16 my-2">
                         <!-- Images Profile -->
                         <div
                             class="flex justify-center items-center overflow-hidden rounded-full m-1 p-1 py border-yellow-300 border-8">
@@ -119,46 +119,77 @@
             </div>
             <!-- Left Section End -->
             <!-- Right Section -->
-            <div class="lg:col-span-4 bg-white py-4 mt-2 px-2">
+            <div class="lg:col-span-4 bg-white xl:py-4 xl:mt-2 xl:px-2">
                 <div class="">
 
+                    <!-- Navbar Appears in Smaller device -->
+                    <div class="lg:hidden flex justify-between items-center bg-gray-800 px-6 sticky z-10"
+                        style="top: 0%;">
+                        <div class="flex justify-center items-center w-16 p-1.5">
+                            <img src="./Images/Profile.png" alt="" class="rounded-full">
+                        </div>
+                        <button onclick="openBars();" class="w-10 lg:hidden bg-transparent px-2 py-0.5 border-round">
+                            <img src="./Images/Bars.png" alt="">
+                            <nav id="navList"
+                                class="nav -ml-16 fixed z-10 hidden lg:flex flex-col justify-start shadow-md bg-white text-black px-2 py-2 divide-y-2 text-xs font-medium leading-relaxed ">
+                                <a href="#about"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">About</a>
+                                <a href="#experience"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">Experience</a>
+                                <a href="#project"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">Project</a>
+                                <a href="#education"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">Education</a>
+                                <a href="#skills"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">Skills</a>
+                                <a href="#contact"
+                                    class="hover:font-bold hover:bg-teal-200 duration-300 px-2 py-1">Contact
+                                    Us</a>
+                                </a>
+                            </nav>
+                        </button>
+                    </div>
+                    <!-- Navbar Appears in Smaller device -->
+
                     <!-- About Section -->
-                    <div id="about" class="my-16 px-2 py-1">
-                        <div class="grid grid-cols-7 h-auto my-8">
+                    <div id="about" class="my-4 md:my-16 px-2">
+                        <div class="md:grid grid-cols-7 h-auto my-8">
                             <!-- Left Section -->
-                            <div class="col-span-4 flex justify-center items-center ">
-                                <div class="flex-col justify-center">
-                                    <h1 class="font-bold text-2xl my-4 py-2 px-3">I'm
-                                        <span class="text-4xl uppercase text-teal-600">GOUR KRISHNA DEY</span>
+                            <div class="col-span-4 flex justify-center items-center text-lg lg:text-xl 2xl:text-2xl">
+                                <div class="flex-col justify-center items-center">
+                                    <h1 class="font-bold my-4 py-2 px-3">I'm
+                                        <span class="text-2xl lg:text-3xl 2xl:text-4xl uppercase text-teal-600">GOUR
+                                            KRISHNA DEY</span>
                                     </h1>
-                                    <h1 class="text-6xl text-gray-600 px-3">A
-                                        <span id="profession" class="text-7xl text-amber-400"
+                                    <h1 class="text-3xl lg:text-4xl 2xl:text-6xl text-gray-600 px-3">A
+                                        <span id="profession" class="text-4xl lg:text-5xl 2xl:text-7xl text-amber-400"
                                             style='font-family: "Caveat Brush", cursive;'>
 
                                         </span>
                                     </h1>
                                     <div class="my-4">
-                                        <p class="text-slate-600 text-2xl px-3 py-2 text-justify">
+                                        <p class="text-slate-600 px-3 py-2 text-justify">
                                             Crafting user-centered digital solutions that bridge creativity and
                                             functionality. Let's transform your ideas into intuitive, stunning web
                                             experiences. Explore my portfolio and let's collaborate on your next
                                             project.
                                         </p>
                                         <!-- Buttons -->
-                                        <div class="flex justify-start items-center p-3 gap-3">
+                                        <div
+                                            class="flex justify-center md:justify-start items-center p-3 gap-3 text-base lg:text-lg 2xl:text-xl">
                                             <a href="./PDF/GourKrishnaDey_Resume_APR2024.pdf" target="_blank">
                                                 <button class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
                                             border-teal-800 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                            hover:text-white text-black bg-none text-xl font-semibold">
-                                                    <p class="text-xl">View Resume</p>
+                                            hover:text-white text-black bg-none  font-semibold">
+                                                    <p class="">View Resume</p>
                                                     <img src="./Images/Resume.png" alt=""
                                                         class="w-8 bg-white p-0.5 rounded-full">
                                                 </button>
                                             </a>
-                                            <a href="#" target="_blank">
+                                            <a href="#project">
                                                 <button class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 shadow-sm
                                                  border-teal-800 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                 text-white hover:text-black hover:bg-none text-xl font-semibold">
+                                                 text-white hover:text-black hover:bg-none  font-semibold">
                                                     <p class="">Explore My Work</p>
                                                     <img src="./Images/Explore.png" alt=""
                                                         class="w-8 bg-white p-0.5 rounded-full">
@@ -170,18 +201,18 @@
                                 </div>
                             </div>
                             <!-- Left Section -->
+
                             <!-- Right Section -->
-                            <div class="col-span-3 py-2 px-1 mb-4">
+                            <div class="hidden md:block col-span-3 py-2 px-1 mb-4">
                                 <div class="flex justify-center items-center overflow-hidden rounded-full">
                                     <img src="./Images/20200623_233958.jpg" alt=""
-                                        class="w-max scale-110 hover:scale-100 duration-300">
+                                        class="w-max scale-110 hover:scale-100 duration-300 -z-0">
                                 </div>
                             </div>
                             <!-- Right Section -->
                         </div>
 
                     </div>
-                    <!-- About Section End -->
 
                     <!-- Experience Section -->
                     <div id="experience" class="my-16 px-2 py-2 bg-gray-50 shadow-sm">
@@ -189,10 +220,10 @@
                         <!-- Heading 1 -->
                         <div class="flex justify-start items-center gap-4 px-1 py-2 mb-2">
                             <span>
-                                <img src="./Images/Bullet.png" alt="" class="w-10">
+                                <img src="./Images/Bullet.png" alt="" class="w-8 lg:w-10">
                             </span>
-                            <div class="flex justify-center items-center">
-                                <h1 class="text-teal-600 font-bold text-3xl capitalize">
+                            <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+                                <h1 class="text-teal-600 font-bold capitalize">
                                     Experience</h1>
                             </div>
                         </div>
@@ -201,54 +232,57 @@
                         <!-- Body -->
                         <section class="text-gray-600 body-font overflow-hidden">
                             <div class="container px-1 py-2 mx-auto mt-1">
-                                <div class="divide-y-2 divide-gray-100 px-2">
+                                <div class="divide-y-2 divide-gray-100 px-2 text-sm lg:text-base 2xl:text-lg">
 
                                     <!-- Experience 1 -->
                                     <div class="py-3 px-2 grid grid-cols-4 gap-4">
                                         <div class="flex flex-col justify-center items-center gap-2">
-                                            <h2 class="font-semibold text-lg tracking-tight text-gray-900 text-center">
+                                            <h2
+                                                class="font-semibold text-sm lg:text-base 2xl:text-lg tracking-tight text-gray-900 text-center">
                                                 Web Developer
                                                 Internship</h2>
-                                            <p class="text-gray-500 text-md flex flex-col justify-center items-center">
-                                                <span>10th October , 2023</span>
+                                            <p
+                                                class="text-gray-500 text-xs lg:text-sm 2xl:text-base flex flex-col justify-center items-center py-2">
+                                                <span>10/10/2023</span>
                                                 <span>to</span>
-                                                <span>10th November , 2023</span>
+                                                <span>10/11/2023</span>
                                             </p>
                                         </div>
                                         <div class="col-span-3">
-                                            <h2 class="text-2xl font-semibold text-gray-900 title-font font-sans py-2">
+                                            <h2
+                                                class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-gray-900 title-font font-sans py-2">
                                                 Info aidTech
                                             </h2>
-                                            <p class="leading-normal text-lg text-justify">
+                                            <p class="leading-normal text-justify">
                                                 In my one-month virtual internship at 'Info aidTech,' I developed
                                                 impactful projects, including an immersive E-commerce Website using
                                                 HTML, CSS, JavaScript, and Wow.js. I also created a Simple Calculator
                                                 and Temperature Converter in JavaScript, and a visually captivating
                                                 Urban Spice Restaurant Website using HTML, Tailwind CSS, and jQuery.</p>
                                             <!-- Buttons -->
-                                            <div class="flex justify-start items-center py-1 gap-3 mt-2">
+                                            <div class="flex justify-start items-center py-1 gap-3 mt-4 lg:mt-2">
                                                 <a href="https://github.com/gkdey17cse/InfoAidtech_Internship"
                                                     target="_blank">
                                                     <button
-                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
+                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm h-16 md:h-12 lg:h-auto
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    hover:text-white text-teal-600 bg-none text-md font-semibold">
+                                                                                    hover:text-white text-teal-600 bg-none font-semibold">
                                                         <p class="">Explore Internship Works</p>
                                                     </button>
                                                 </a>
                                                 <a href="./PDF/InfoAidtech_CompletionCertificate.pdf" target="_blank">
                                                     <button
-                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
+                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm h-16 md:h-12 lg:h-auto
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    text-white hover:text-teal-600 hover:bg-none text-md font-semibold">
+                                                                                    text-white hover:text-teal-600 hover:bg-none font-semibold">
                                                         <p class="">Completion Certificate</p>
                                                     </button>
                                                 </a>
                                                 <a href="./PDF/InfoAidtech_LOR.pdf" target="_blank">
                                                     <button
-                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
+                                                        class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm h-16 md:h-12 lg:h-auto
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    hover:text-white text-teal-600 bg-none text-md font-semibold">
+                                                                                    hover:text-white text-teal-600 bg-none font-semibold">
                                                         <p class="">LOR</p>
                                                     </button>
                                                 </a>
@@ -257,23 +291,27 @@
                                         </div>
                                     </div>
                                     <!-- Experience 1 End -->
+
                                     <!-- Experience 2 -->
                                     <div class="mt-4 py-3 px-2 grid grid-cols-4 gap-4">
                                         <div class="flex flex-col justify-center items-center gap-2">
-                                            <h2 class="font-semibold text-lg tracking-tight text-gray-900 text-center">
+                                            <h2
+                                                class="font-semibold  text-sm lg:text-base 2xl:text-lg tracking-tight text-gray-900 text-center">
                                                 Web Developer
                                                 Internship</h2>
-                                            <p class="text-gray-500 text-md flex flex-col justify-center items-center">
-                                                <span>1st November , 2023</span>
+                                            <p
+                                                class="text-xs lg:text-sm 2xl:text-base text-gray-500 flex flex-col justify-center items-center py-2">
+                                                <span>1/11/2023</span>
                                                 <span>to</span>
-                                                <span>1st December , 2023</span>
+                                                <span>1/12/2023</span>
                                             </p>
                                         </div>
                                         <div class="col-span-3">
-                                            <h2 class="text-2xl font-semibold text-gray-900 title-font font-sans py-2">
+                                            <h2
+                                                class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-gray-900 title-font font-sans py-2">
                                                 Octanet Services PVT LTD.
                                             </h2>
-                                            <p class="leading-normal text-lg text-justify">
+                                            <p class="leading-normal text-justify">
                                                 During my one-month virtual internship at Octanet Pvt Ltd, I
                                                 successfully
                                                 completed projects including a Landing Page and a Todolist. These
@@ -286,7 +324,7 @@
                                                     <button
                                                         class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    hover:text-white text-teal-600 bg-none text-md font-semibold">
+                                                                                    hover:text-white text-teal-600 bg-none font-semibold">
                                                         <p class="">Explore Internship Works</p>
                                                     </button>
                                                 </a>
@@ -294,7 +332,7 @@
                                                     <button
                                                         class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    text-white hover:text-teal-600 hover:bg-none text-md font-semibold">
+                                                                                    text-white hover:text-teal-600 hover:bg-none font-semibold">
                                                         <p class="">Completion Certificate</p>
                                                     </button>
                                                 </a>
@@ -306,20 +344,23 @@
                                     <!-- Experience 3 -->
                                     <div class="mt-4 py-3 px-2 grid grid-cols-4 gap-4">
                                         <div class="flex flex-col justify-center items-center gap-2">
-                                            <h2 class="font-semibold text-lg tracking-tight text-gray-900 text-center">
+                                            <h2
+                                                class="font-semibold  text-sm lg:text-base 2xl:text-lg tracking-tight text-gray-900 text-center">
                                                 Web Developer
                                                 Internship</h2>
-                                            <p class="text-gray-500 text-md flex flex-col justify-center items-center">
-                                                <span>1st November , 2023</span>
+                                            <p
+                                                class="text-xs lg:text-sm 2xl:text-base text-gray-500 flex flex-col justify-center items-center py-2">
+                                                <span>1/11/2023</span>
                                                 <span>to</span>
-                                                <span>1st December , 2023</span>
+                                                <span>1/12/2023</span>
                                             </p>
                                         </div>
                                         <div class="col-span-3">
-                                            <h2 class="text-2xl font-semibold text-gray-900 title-font font-sans py-2">
+                                            <h2
+                                                class="text-lg lg:text-xl 2xl:text-2xl font-semibold text-gray-900 title-font font-sans py-2">
                                                 TechnoHacks Edutech
                                             </h2>
-                                            <p class="leading-normal text-lg text-justify">
+                                            <p class="leading-normal text-justify">
                                                 During my one-month virtual internship at "TechnoHacks Edutech," I
                                                 developed projects including LandingPage Bharatdarshan, a
                                                 CurrencyConverter for 9 major currencies, and a RegistrationForm
@@ -361,28 +402,28 @@
                     <!-- Project Section -->
                     <div id="project" class="my-12 px-2 py-8">
                         <!-- Heading 1 -->
-                        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-4">
+                        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-2">
                             <span>
-                                <img src="./Images/Bullet.png" alt="" class="w-10">
+                                <img src="./Images/Bullet.png" alt="" class="w-8 lg:w-10">
                             </span>
-                            <div class="flex justify-center items-center">
-                                <h1 class="text-teal-600 font-bold text-3xl capitalize">
+                            <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+                                <h1 class="text-teal-600 font-bold capitalize">
                                     Major Projects that I’ve done yet</h1>
                             </div>
                         </div>
                         <!-- Heading 1 End -->
 
                         <!-- Project 1 -->
-                        <div class="px-2 mx-4 py-2 shadow-md rounded-md bg-white my-2">
+                        <div class="px-2 mx-4 py-2 shadow-xl rounded-md bg-white my-2 text-xs leading-relaxed">
 
                             <!-- Header Section -->
-                            <div id="project-head-1" class="grid grid-cols-12  px-2"
+                            <div id="project-head-1" class="flex justify-between items-center  px-2"
                                 style='font-family: "Inter", sans-serif;'>
-                                <div class="col-span-11 flex justify-start gap-4 my-2 items-center">
+                                <div class="flex justify-start gap-4 my-2 items-center">
                                     <div class="flex justify-start items-center">
                                         <img src="./Images/AI.png" alt="" class="w-12">
                                     </div>
-                                    <h1 class="font-semibold text-xl capitalize tracking-wider">Interview-Mitra (AI
+                                    <h1 class="font-semibold text-sm lg:text-base: 2xl:text-xl capitalize tracking-wider">Interview-Mitra (AI
                                         powered exam
                                         portal cum Job
                                         Application portal )</h1>
@@ -390,12 +431,12 @@
                                 <div class="flex justify-center items-center gap-4">
                                     <a href="#" target="_blank" class="flex justify-center items-center rounded-full p-1 hover:border-2 duration-150
                                      border-teal-600" title="Click to Explore">
-                                        <img src="./Images/LinkIcon.png" alt="" class="w-14">
+                                        <img src="./Images/LinkIcon.png" alt="" class="w-16 lg:w-16 2xl:w-14">
                                     </a>
                                     <button onclick="openProjectDetails(1);"
                                         class="flex justify-center items-center hover:scale-110 duration-150"
                                         title="Expand">
-                                        <img id="arrow-1" src="./Images/DownArrow.png" alt="" class="w-14 rotate-180">
+                                        <img id="arrow-1" src="./Images/DownArrow.png" alt="" class="w-16 lg:w-16 2xl:w-14 rotate-180">
                                     </button>
                                 </div>
                             </div>
@@ -403,9 +444,9 @@
 
                             <!-- Body Part -->
                             <div id="project-body-1" class="p-2">
-                                <div class="grid grid-cols-5">
+                                <div class="md:grid grid-cols-5">
                                     <div class="col-span-4">
-                                        <div class="p-2 my-2 text-lg tracking-wide text-justify">
+                                        <div class="p-2 my-2 tracking-wide text-justify">
                                             <p>Designed and developed UI and Frontend of 'Interviewmitra', an AI-powered
                                                 exam portal
                                                 offering a seamless job application platform for students and
@@ -414,13 +455,13 @@
                                                 enhancing recruitment efficiency and career prospects.</p>
                                         </div>
                                         <!-- Buttons -->
-                                        <div class="flex justify-start items-center px-3 py-1 gap-3">
+                                        <div class="flex justify-center md:justify-start items-center px-3 py-1 gap-3">
                                             <a href="./pagenotfound.html" target="_blank">
                                                 <button
                                                     class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 hover:bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    hover:text-white text-teal-600 bg-none text-lg font-semibold">
-                                                    <p class="text-xl">Explore UI-Design</p>
+                                                                                    hover:text-white text-teal-600 bg-none font-semibold">
+                                                    <p class="">Explore UI-Design</p>
                                                     <img src="./Images/Figma.png" alt=""
                                                         class="w-8 bg-white p-0.5 rounded-full">
                                                 </button>
@@ -429,7 +470,7 @@
                                                 <button
                                                     class="flex justify-center items-center py-1 px-4 gap-2 border-2 shadow-sm
                                                     border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-                                                                                    text-white hover:text-teal-600 hover:bg-none text-lg font-semibold">
+                                                                                    text-white hover:text-teal-600 hover:bg-none font-semibold">
                                                     <p class="">Interview-Mitra</p>
                                                     <img src="./Images/Interviewmitra.png" alt=""
                                                         class="w-8 bg-white p-0.5 rounded-full">
@@ -439,7 +480,7 @@
                                         <!-- Buttons -->
                                     </div>
                                     <div class="flex justify-center items-center p-2">
-                                        <img src="./Images/AI_Exam_Portal.jpg" alt="" class="w-auto">
+                                        <img src="./Images/AI_Exam_Portal.jpg" alt="" class="w-1/2 md:w-auto">
                                     </div>
                                 </div>
                             </div>
@@ -985,7 +1026,7 @@
                     <!-- Education Section End -->
 
                     <!-- Skills Section -->
-                    <div id="skills" class="mt-4 px-2 py-4 h-screen">
+                    <div id="skills" class="my-32 px-2 py-4">
 
                         <!-- Heading 1 -->
                         <div class="flex justify-start items-center gap-4 px-1 py-2 mb-4">
@@ -1217,9 +1258,9 @@
                     <!-- Skills Section End -->
 
                     <!-- Achievements Section -->
-                    <div id="achievements" class="mt-4 px-2 py-4 bg-gray-100">
+                    <div id="achievements" class="mt-16 mb-32 px-2 py-4 bg-gray-100">
                         <!-- Heading 1 -->
-                        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-4">
+                        <div class="flex justify-start items-center gap-4 px-1 py-2">
                             <span>
                                 <img src="./Images/Bullet.png" alt="" class="w-10">
                             </span>
@@ -1332,6 +1373,36 @@
 
                     </div>
                     <!-- Contact Section End -->
+
+                    <!-- Footer -->
+                    <div
+                        class="mt-16 px-3 flex justify-around items-center border-t-2 border-teal-500 text-teal-600 text-lg">
+                        <div class="flex justify-center items-center gap-4 px-2 py-3">
+                            <p>©
+                                <script>document.write(new Date().getFullYear());</script> Gour Krishna Dey
+                            </p>
+                        </div>
+                        <div class="flex justify-around items-center py-2 gap-2">
+                            <a href="#">
+                                <img src="./Images/Github.png" alt=""
+                                    class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="./Images/Linkedin.png" alt=""
+                                    class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="./Images/Facebook.png" alt=""
+                                    class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                            </a>
+                            <a href="#">
+                                <img src="./Images/Instagram.png" alt=""
+                                    class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Footer -->
+
                 </div>
             </div>
             <!-- Right Section End -->
@@ -1389,6 +1460,17 @@
             backSpeed: 50,
             loop: true
         });
+
+        // function openBars () to open and close three bars
+        function openBars() {
+            var list = document.getElementById('navList');
+            if (list.style.display === 'flex') {
+                list.style.display = 'none';
+            } else {
+                list.style.display = 'flex';
+            }
+        }
+
     </script>
 
     <!-- Arrow Rotator and expand section -->
@@ -1454,6 +1536,7 @@
     <!-- Scroll Spy -->
     <script>
         /* http://jsfiddle.net/LwLBx/ */
+
 
         // Cache selectors
         var lastId,
