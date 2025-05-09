@@ -14,14 +14,9 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Owl Caraousel -->
-      <!-- Owl Caraousel -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Owl Caraousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -34,7 +29,7 @@
           <div class="flex-col justify-center items-center p-4 gap-16 my-2">
             <!-- Images Profile -->
             <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-1 py border-yellow-300 border-8">
-              <img src="./Images/Profile2.png" alt="" class="scale-110 hover:scale-105 duration-300">
+              <img src="./Images/Profile.png" alt="" class="scale-110 hover:scale-105 duration-300">
             </div>
             <!-- Images Profile ENd -->
 
@@ -1230,7 +1225,7 @@
           <!-- Achievements Section End -->
 
           <!-- Contact Section -->
-          <div id="contact" class="mt-16 px-2 py-1 ">
+          <div id="contactSection" class="mt-16 px-2 py-1 ">
             <!-- Heading 1 -->
             <div class="flex justify-start items-center gap-4 px-1 py-2 xl:mt-16">
               <span>
@@ -1242,357 +1237,425 @@
               </div>
             </div>
             <!-- Heading 1 End -->
-            <div class="py-4 my-2 lg:my-16 px-8 lg:px-2 text-xs md:text-sm xl:text-base self-center">
-              <p class="text-red-500 text-center pb-8">Note: Backend functionality for this section is currently under development.</p>
-              <form id="contactForm" action="" method="get" class="2xl:pl-20 text-red-600">
-                <div class="py-2 grid grid-cols-2 gap-4 max-w-5xl">
-                  <div class="mb-5">
-                    <label for="name" class="block text-gray-900 mb-2 font-medium text-lg tracking-wide">Your
-                      Name</label>
-                    <input type="text" id="name" name="name" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Eg. : Kevi Robin Peterson">
-                  </div>
-                  <div class="mb-5">
-                    <label for="email" class="block text-gray-900 mb-2 font-medium text-lg tracking-wide">Your
-                      Email</label>
-                    <input type="email" id="email" name="email" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="name@flowbite.com">
-                  </div>
+            <div id="contactSection" class="mt-16 px-2 py-1">
+              <!-- Heading -->
+              <div class="flex justify-start items-center gap-4 px-1 py-2 xl:mt-16">
+                <span>
+                  <img src="./Images/Bullet.png" alt="" class="w-8 lg:w-10">
+                </span>
+                <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+                  <h1 class="text-teal-600 font-bold capitalize">
+                    Interested in working together? Let’s talk
+                  </h1>
                 </div>
-                <div class="py-2 max-w-5xl">
-                  <div class="mb-5">
-                    <label for="subject" class="block text-sm md:text-base xl:text-lg mb-2 font-medium text-gray-900">Subject
-                      <span class="text-red-500">*</span></label>
-                    <input type="text" id="subject" name="subject" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Looking for Bengali Linguistic QA Tester Position" />
+              </div>
+
+              <!-- Form Section -->
+              <div class="py-4 my-2 lg:my-16 px-8 lg:px-2 text-xs md:text-sm xl:text-base self-center">
+                <p class="text-red-500 text-center pb-8">Note: Backend functionality for this section is currently under development.</p>
+                <form id="contactForm" class="2xl:pl-20 text-red-600">
+                  <div class="py-2 grid grid-cols-2 gap-4 max-w-5xl">
+                    <div class="mb-5">
+                      <label for="name" class="block text-gray-900 mb-2 font-medium text-lg tracking-wide">Your Name</label>
+                      <input type="text" id="name" name="name" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Eg. : Kevi Robin Peterson">
+                    </div>
+                    <div class="mb-5">
+                      <label for="email" class="block text-gray-900 mb-2 font-medium text-lg tracking-wide">Your Email</label>
+                      <input type="email" id="email" name="email" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="name@flowbite.com">
+                    </div>
                   </div>
-                </div>
-                <div class="py-2 max-w-5xl">
-                  <div class="mb-5">
-                    <label for="details" class="block text-sm md:text-base xl:text-lg mb-2 font-medium text-gray-900">Details
-                      <span class="text-red-500">*</span> </label>
-                    <textarea type="text" id="details" name="details" class="bg-white h-20 border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Ex - Native Bengali speaker with expertise in QA testing, seeking to enhance Welocalize projects with linguistic accuracy and cultural relevance. Proficient in HTML, CSS, and JavaScript."></textarea>
+
+                  <div class="py-2 max-w-5xl">
+                    <div class="mb-5">
+                      <label for="subject" class="block text-sm md:text-base xl:text-lg mb-2 font-medium text-gray-900">Subject <span class="text-red-500">*</span></label>
+                      <input type="text" id="subject" name="subject" class="bg-white border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Looking for Bengali Linguistic QA Tester Position" />
+                    </div>
                   </div>
-                </div>
-                <div class="flex justify-center items-center mt-4 py-2">
-                  <button onclick="myFunction()" type="submit" value="submit" class="block w-1/2 lg:w-1/3 py-2.5 px-4 gap-2 border-2 shadow-sm
-    border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500
-    text-white hover:text-black hover:bg-none  font-semibold">
-                    Send
-                  </button>
-                </div>
-              </form>
+
+                  <div class="py-2 max-w-5xl">
+                    <div class="mb-5">
+                      <label for="details" class="block text-sm md:text-base xl:text-lg mb-2 font-medium text-gray-900">Details <span class="text-red-500">*</span></label>
+                      <textarea id="details" name="details" class="bg-white h-20 border-2 font-sans border-teal-600 text-gray-900 rounded-md block w-full px-2.5 py-2 xl:py-3" placeholder="Ex - Native Bengali speaker with expertise in QA testing..."></textarea>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-center items-center mt-4 py-2">
+                    <input id="submitBtn" type="submit" value="Send" class="block w-1/2 lg:w-1/3 py-2.5 px-4 border-2 shadow-sm border-teal-600 active:translate-x-1 active:translate-y-1 duration-150 bg-gradient-to-r from-teal-600 to-teal-600 via-teal-500 text-white hover:text-black hover:bg-none font-semibold" />
+                  </div>
+                </form>
+              </div>
+
+              <!-- Script and Dependencies -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+              <script>
+                $(document).ready(function() {
+                  emailjs.init('YGIvkaJo0BzfbQ-Do'); // Replace with your actual PUBLIC key
+
+                  $('#contactForm').validate({
+                    rules: {
+                      name: {
+                        required: true,
+                        minlength: 3
+                      },
+                      email: {
+                        required: true,
+                        email: true
+                      },
+                      subject: {
+                        required: true
+                      },
+                      details: {
+                        required: true,
+                        minlength: 10
+                      }
+                    },
+                    messages: {
+                      name: {
+                        required: "Name is required",
+                        minlength: "At least 3 characters"
+                      },
+                      email: {
+                        required: "Email is required",
+                        email: "Enter a valid email"
+                      },
+                      subject: "Subject is required",
+                      details: {
+                        required: "Details are required",
+                        minlength: "At least 10 characters"
+                      }
+                    },
+                    submitHandler: function(form, event) {
+                      event.preventDefault();
+                      const btn = document.getElementById('submitBtn');
+                      btn.value = 'Sending...';
+
+                      const serviceID = 'default_service';
+                      const templateID = 'template_z0si4ar';
+
+                      emailjs.sendForm(serviceID, templateID, form)
+                        .then(() => {
+                          btn.value = 'Send';
+                          alert('Email sent successfully!');
+                          form.reset();
+                        }, (err) => {
+                          btn.value = 'Send';
+                          alert('Error: Email not sent.\n' + JSON.stringify(err));
+                        });
+                    }
+                  });
+                });
+              </script>
             </div>
+
+            <!-- Contact Section End -->
+
+            <!-- Footer -->
+            <div class="mt-16 px-3 flex justify-around items-center border-t-2 border-teal-500 text-teal-600 text-sm lg:text-base 2xl:text-lg">
+              <div class="flex justify-center items-center gap-4 px-2 py-3">
+                <p>©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script> Gour Krishna Dey
+                </p>
+              </div>
+              <div class="flex justify-around items-center py-4 gap-4 lg:py-2 lg:gap-2">
+                <a href="./PageNotFound.html">
+                  <img src="./Images/Github.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                </a>
+                <a href="./PageNotFound.html">
+                  <img src="./Images/Linkedin.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                </a>
+                <a href="./PageNotFound.html">
+                  <img src="./Images/Facebook.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                </a>
+                <a href="./PageNotFound.html">
+                  <img src="./Images/Instagram.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
+                </a>
+              </div>
+            </div>
+            <!-- Footer -->
 
           </div>
-          <!-- Contact Section End -->
-
-          <!-- Footer -->
-          <div class="mt-16 px-3 flex justify-around items-center border-t-2 border-teal-500 text-teal-600 text-sm lg:text-base 2xl:text-lg">
-            <div class="flex justify-center items-center gap-4 px-2 py-3">
-              <p>©
-                <script>
-                  document.write(new Date().getFullYear());
-                </script> Gour Krishna Dey
-              </p>
-            </div>
-            <div class="flex justify-around items-center py-4 gap-4 lg:py-2 lg:gap-2">
-              <a href="./PageNotFound.html">
-                <img src="./Images/Github.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
-              </a>
-              <a href="./PageNotFound.html">
-                <img src="./Images/Linkedin.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
-              </a>
-              <a href="./PageNotFound.html">
-                <img src="./Images/Facebook.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
-              </a>
-              <a href="./PageNotFound.html">
-                <img src="./Images/Instagram.png" alt="" class="w-12 hover:bg-teal-300 hover:rounded-full duration-200">
-              </a>
-            </div>
-          </div>
-          <!-- Footer -->
-
         </div>
+        <!-- Right Section End -->
       </div>
-      <!-- Right Section End -->
     </div>
-  </div>
 
 
 
-  <!-- jQuery -->
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- jQuery -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <!-- Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Owl Carousel .js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Jqueryform Validation -->
-  <!-- <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- Jqueryform Validation -->
+    <!-- <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
-  <script>
-    jQuery('#contactForm').validate({
+    <script>
+      jQuery('#form').validate({
 
-      rules: {
+        rules: {
 
-        name: {
-          required: true,
-          minlength: 3,
+          name: {
+            required: true,
+            minlength: 3,
+          },
+          email: "required",
+          details: {
+            required: true,
+            minlength: 10,
+          },
+          subject: "required",
         },
-        email: "required",
-        details: {
-          required: true,
-          minlength: 10,
-        },
-        subject: "required",
-      },
 
-      messages: {
-        name: {
-          required: "Name is Mandatory",
-          minlength: "Name can't be too short",
-        },
-        email: {
-          required: "Email is Mandatory",
-        },
-        subject: "Please Enter about your topic of Discussion",
-        details: {
-          required: "Write your subject in details",
-          minlength: "Please enter your subject in details",
-        }
-      },
-
-
-      submitHandler: function(form) {
-        form.submit();
-      }
-
-    });
-  </script>
-
-  <!-- Owl Carousel .js -->
-  <script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 4,
-      loop: true,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-        1100: {
-          items: 2
-        },
-        1400: {
-          items: 3
-        }
-      }
-    });
-    $('.play').on('click', function() {
-      owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function() {
-      owl.trigger('stop.owl.autoplay')
-    })
-  </script>
-
-  <!-- Type JS -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typed = new Typed('#profession', {
-      strings: ['UI-UX Designer', 'Machine Learning Enthusiast', 'Web Developer'],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true
-    });
-
-    // function openBars () to open and close three bars
-    function openBars() {
-      var list = document.getElementById('navList');
-      if (list.style.display === 'flex') {
-        list.style.display = 'none';
-      } else {
-        list.style.display = 'flex';
-      }
-    }
-  </script>
-
-
-
-  <!-- Arrow Rotator and expand section -->
-  <script>
-    function openProjectDetails(num) {
-      var body = "project-body-" + num;
-      var arrow = "arrow-" + num;
-
-      let x = document.getElementById(body);
-      let y = document.getElementById(body).classList
-      let btn = document.getElementById(arrow).classList;
-
-      if (x.style.display !== "block") {
-        x.style.display = "block";
-        btn.add("rotate-180");
-        btn.add("duration-300");
-        y.add("duration-300");
-
-
-        for (i = 1; i < 10; i++) {
-          if (i == num) {
-            continue;
+        messages: {
+          name: {
+            required: "Name is Mandatory",
+            minlength: "Name can't be too short",
+          },
+          email: {
+            required: "Email is Mandatory",
+          },
+          subject: "Please Enter about your topic of Discussion",
+          details: {
+            required: "Write your subject in details",
+            minlength: "Please enter your subject in details",
           }
-          var body = "project-body-" + i;
-          var arrow = "arrow-" + i;
-          let x = document.getElementById(body);
-          let btn = document.getElementById(arrow).classList;
-          let y = document.getElementById(body).classList
+        },
 
+
+        submitHandler: function(form) {
+          form.submit();
+        }
+
+      });
+    </script>
+
+    <!-- Owl Carousel .js -->
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1
+          },
+          1100: {
+            items: 2
+          },
+          1400: {
+            items: 3
+          }
+        }
+      });
+      $('.play').on('click', function() {
+        owl.trigger('play.owl.autoplay', [1000])
+      })
+      $('.stop').on('click', function() {
+        owl.trigger('stop.owl.autoplay')
+      })
+    </script>
+
+    <!-- Type JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#profession', {
+        strings: ['UI-UX Designer', 'Machine Learning Enthusiast', 'Web Developer'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+      });
+
+      // function openBars () to open and close three bars
+      function openBars() {
+        var list = document.getElementById('navList');
+        if (list.style.display === 'flex') {
+          list.style.display = 'none';
+        } else {
+          list.style.display = 'flex';
+        }
+      }
+    </script>
+
+
+
+    <!-- Arrow Rotator and expand section -->
+    <script>
+      function openProjectDetails(num) {
+        var body = "project-body-" + num;
+        var arrow = "arrow-" + num;
+
+        let x = document.getElementById(body);
+        let y = document.getElementById(body).classList
+        let btn = document.getElementById(arrow).classList;
+
+        if (x.style.display !== "block") {
+          x.style.display = "block";
+          btn.add("rotate-180");
+          btn.add("duration-300");
           y.add("duration-300");
+
+
+          for (i = 1; i < 10; i++) {
+            if (i == num) {
+              continue;
+            }
+            var body = "project-body-" + i;
+            var arrow = "arrow-" + i;
+            let x = document.getElementById(body);
+            let btn = document.getElementById(arrow).classList;
+            let y = document.getElementById(body).classList
+
+            y.add("duration-300");
+            x.style.display = "none";
+            btn.remove("rotate-180");
+            btn.add("duration-300");
+
+          }
+        } else if (x.style.display !== "none") {
+          // for (i = 1; i < 10; i++) {
           x.style.display = "none";
           btn.remove("rotate-180");
           btn.add("duration-300");
-
+          y.add("duration-300");
+          // }
         }
-      } else if (x.style.display !== "none") {
-        // for (i = 1; i < 10; i++) {
-        x.style.display = "none";
-        btn.remove("rotate-180");
+
+      }
+
+      function openEducationDetails(num) {
+        var body = "education-body-" + num;
+        var arrow = "education-arrow-" + num;
+
+        let x = document.getElementById(body);
+        let btn = document.getElementById(arrow).classList;
+
+        if (x.style.display !== "block") {
+          x.style.display = "block";
+          btn.add("rotate-180");
+        } else {
+          x.style.display = "none";
+          btn.remove("rotate-180");
+        }
+
         btn.add("duration-300");
-        y.add("duration-300");
-        // }
       }
+    </script>
 
-    }
+    <!-- Scroll Spy -->
 
-    function openEducationDetails(num) {
-      var body = "education-body-" + num;
-      var arrow = "education-arrow-" + num;
+    <script>
+      var lastId,
+        topMenu = $("#navList"),
+        topMenuHeight = topMenu.outerHeight() - 300,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function() {
+          var item = $($(this).attr("href"));
+          if (item.length) {
+            return item;
+          }
+        });
 
-      let x = document.getElementById(body);
-      let btn = document.getElementById(arrow).classList;
+      menuItems.click(function(e) {
+        var href = $(this).attr("href"),
+          offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+          scrollTop: offsetTop
+        }, 300);
+        if (!helpMenuDiv.classList.contains("hidden")) {
+          helpMenuDiv.classList.add("hidden");
+        }
+        e.preventDefault();
+      });
 
-      if (x.style.display !== "block") {
-        x.style.display = "block";
-        btn.add("rotate-180");
-      } else {
-        x.style.display = "none";
-        btn.remove("rotate-180");
-      }
+      $(window).scroll(function() {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
 
-      btn.add("duration-300");
-    }
-  </script>
+        // Get id of current scroll item
+        var cur = scrollItems.map(function() {
+          if ($(this).offset().top < fromTop)
+            return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
 
-  <!-- Scroll Spy -->
-
-  <script>
-    var lastId,
-      topMenu = $("#navList"),
-      topMenuHeight = topMenu.outerHeight() - 300,
-      // All list items
-      menuItems = topMenu.find("a"),
-      // Anchors corresponding to menu items
-      scrollItems = menuItems.map(function() {
-        var item = $($(this).attr("href"));
-        if (item.length) {
-          return item;
+        if (lastId !== id) {
+          lastId = id;
+          // Set/remove active class
+          menuItems
+            .parent().removeClass("font-bold text-yellow-300")
+            .end().filter("[href='#" + id + "']").parent().addClass("font-bold text-yellow-300")
         }
       });
+    </script>
 
-    menuItems.click(function(e) {
-      var href = $(this).attr("href"),
-        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-      $('html, body').stop().animate({
-        scrollTop: offsetTop
-      }, 300);
-      if (!helpMenuDiv.classList.contains("hidden")) {
-        helpMenuDiv.classList.add("hidden");
-      }
-      e.preventDefault();
-    });
+    <script>
+      var lastId,
+        topMenu = $("#menu-content"),
+        topMenuHeight = topMenu.outerHeight() - 300,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function() {
+          var item = $($(this).attr("href"));
+          if (item.length) {
+            return item;
+          }
+        });
 
-    $(window).scroll(function() {
-      // Get container scroll position
-      var fromTop = $(this).scrollTop() + topMenuHeight;
-
-      // Get id of current scroll item
-      var cur = scrollItems.map(function() {
-        if ($(this).offset().top < fromTop)
-          return this;
+      menuItems.click(function(e) {
+        var href = $(this).attr("href"),
+          offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+          scrollTop: offsetTop
+        }, 300);
+        if (!helpMenuDiv.classList.contains("hidden")) {
+          helpMenuDiv.classList.add("hidden");
+        }
+        e.preventDefault();
       });
-      // Get the id of the current element
-      cur = cur[cur.length - 1];
-      var id = cur && cur.length ? cur[0].id : "";
 
-      if (lastId !== id) {
-        lastId = id;
-        // Set/remove active class
-        menuItems
-          .parent().removeClass("font-bold text-yellow-300")
-          .end().filter("[href='#" + id + "']").parent().addClass("font-bold text-yellow-300")
-      }
-    });
-  </script>
+      $(window).scroll(function() {
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
 
-  <script>
-    var lastId,
-      topMenu = $("#menu-content"),
-      topMenuHeight = topMenu.outerHeight() - 300,
-      // All list items
-      menuItems = topMenu.find("a"),
-      // Anchors corresponding to menu items
-      scrollItems = menuItems.map(function() {
-        var item = $($(this).attr("href"));
-        if (item.length) {
-          return item;
+        // Get id of current scroll item
+        var cur = scrollItems.map(function() {
+          if ($(this).offset().top < fromTop)
+            return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+          lastId = id;
+          // Set/remove active class
+          menuItems
+            .parent().removeClass("font-bold text-yellow-300")
+            .end().filter("[href='#" + id + "']").parent().addClass("font-bold text-yellow-300")
         }
       });
-
-    menuItems.click(function(e) {
-      var href = $(this).attr("href"),
-        offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-      $('html, body').stop().animate({
-        scrollTop: offsetTop
-      }, 300);
-      if (!helpMenuDiv.classList.contains("hidden")) {
-        helpMenuDiv.classList.add("hidden");
-      }
-      e.preventDefault();
-    });
-
-    $(window).scroll(function() {
-      // Get container scroll position
-      var fromTop = $(this).scrollTop() + topMenuHeight;
-
-      // Get id of current scroll item
-      var cur = scrollItems.map(function() {
-        if ($(this).offset().top < fromTop)
-          return this;
-      });
-      // Get the id of the current element
-      cur = cur[cur.length - 1];
-      var id = cur && cur.length ? cur[0].id : "";
-
-      if (lastId !== id) {
-        lastId = id;
-        // Set/remove active class
-        menuItems
-          .parent().removeClass("font-bold text-yellow-300")
-          .end().filter("[href='#" + id + "']").parent().addClass("font-bold text-yellow-300")
-      }
-    });
-  </script>
+    </script>
 
 </body>
 

@@ -1,31 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-  {% load static %}
-  <link rel="icon" href="{% static 'webpage/Images/iconlogo.png' %}" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <section class="text-gray-600 body-font">
-    <div class="h-screen container mx-auto flex px-5 py-4 items-center justify-center flex-col">
-      <img class=" object-cover object-center rounded md:w-4/5 lg:w-3/5 2xl:w-2/5" alt="hero" src="./Images/InterviewCompletion.jpg">
-      <div class="text-center w-full">
-        <h1 class="title-font sm:text-4xl text-3xl py-2 font-medium text-gray-900">Interview is Over</h1>
-        <p class="py-3 text-xl leading-relaxed">Thank you for completing your interview with us!</p>
-        <div class="flex justify-center">
-          <a href="./index.html" class="py-3">
-            <button class="inline-flex bg-gradient-to-r bg-purple-500 to-purple-600 via-purple-400 px-4 py-2.5 text-white hover:scale-11 
-            hover:scale-110 duration-500 active:translate-x-1 active:translate-y-1">Redirect to
-              Homepage</button>
-          </a>
-        </div>
+  <body>
+    <form id="form" class="bg-gray-400 p-5 flex gap-5">
+      <div class="field">
+        <label for="email">email</label>
+        <input type="text" name="email" id="email" />
       </div>
-    </div>
-  </section>
-</body>
+      <div class="field">
+        <label for="message">message</label>
+        <input type="text" name="message" id="message" />
+      </div>
+      <div class="field">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <input type="submit" id="button" value="Send Email" />
+    </form>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("YGIvkaJo0BzfbQ-Do");
+    </script>
+
+    <script>
+      const btn = document.getElementById("button");
+
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          btn.value = "Sending...";
+
+          const serviceID = "default_service";
+          const templateID = "template_z0si4ar";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+              btn.value = "Send Email";
+              alert("Sent!");
+            },
+            (err) => {
+              btn.value = "Send Email";
+              alert(JSON.stringify(err));
+            }
+          );
+        });
+    </script>
+  </body>
+</html>
