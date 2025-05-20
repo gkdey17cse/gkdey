@@ -13,38 +13,34 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Poppins&family=Raleway&family=Roboto&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
 
   <!-- Owl Carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
 
 <body class="relative text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
   <!-- ✅ Right Section Background Image -->
-  <div class="fixed inset-0 right-0 lg:left-[0%] bg-cover bg-center bg-no-repeat -z-20" style="
-        background-image: url('./Images/IIITDImage.jfif');
+  <div class="fixed inset-0 right-0 lg:left-[18%] bg-cover bg-center bg-no-repeat -z-20" style="
+        background-image: url('./Images/IIITDImage.jpg');
         background-attachment: fixed;
       "></div>
 
   <!-- ✅ Right Section Overlay -->
-  <div class="fixed inset-0 right-0 lg:left-[20%] bg-black opacity-70 -z-10"></div>
+  <div class="fixed inset-0 right-0 lg:left-[10%] bg-black opacity-70 -z-10"></div>
 
   <!-- ✅ Main Layout -->
   <div class="lg:flex min-h-screen" style="font-family: 'Mulish', sans-serif">
     <!-- ✅ Left Sidebar -->
-    <div
-      class="hidden lg:flex flex-col w-[20%] bg-gradient-to-b from-teal-700 to-teal-700 via-teal-500 rounded-lg items-center shadow-md sticky top-0 h-screen z-30"
-      style="font-family: 'Raleway', sans-serif">
-      <div class="flex flex-col justify-center items-center p-10 gap-6 flex-grow">
-        <div
-          class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-yellow-300 border-8">
-          <img src="./assets/Images/Profile.png" alt="Profile Image" class="scale-110 hover:scale-105 duration-300" />
+    <div class="hidden lg:flex flex-col w-[20%] bg-gradient-to-b from-teal-700 to-teal-700 via-teal-500 rounded-lg items-center shadow-md sticky top-0 h-screen z-30" style="font-family: 'Raleway', sans-serif">
+      <div class="flex flex-col justify-center items-center p-4 gap-6 flex-grow">
+        <div class="p-2 w-5/6">
+          <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-yellow-300 border-8">
+            <img src="./assets/Images/Profile.png" alt="Profile Image" class="scale-110 hover:scale-105 duration-300" />
+          </div>
         </div>
-        <div class="text-center mt-2">
+        <div class="text-center flex flex-col gap-2 tracking-wider ">
           <h2 class="text-white text-base xl:text-lg font-semibold">
             Gour Krishna Dey
           </h2>
@@ -54,39 +50,31 @@
           <p class="text-white text-xs xl:text-sm">Aspiring ML Engineer</p>
         </div>
         <!-- SOcial Media Handles -->
-        <div class="flex justify-around items-center gap-2 my-1">
-          <a href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/"
-            class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
-            <img src="./Images/Linkedin.png" alt="" class="p-2" width="512px" height="512px" />
+        <div class="flex justify-around items-center gap-2 my-1 px-2">
+          <a href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+            <img src="./assets/Images/Linkedin.png" alt="" class="p-2" width="512px" height="512px" />
           </a>
-          <a href="https://github.com/gkdey17cse"
-            class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
-            <img src="./Images/Github.png" alt="" class="p-2" width="512px" height="512px" />
+          <a href="https://github.com/gkdey17cse" class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+            <img src="./assets/Images/Github.png" alt="" class="p-2" width="512px" height="512px" />
           </a>
-          <a href="https://www.facebook.com/gourkrishna.dey.37"
-            class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
-            <img src="./Images/Facebook.png" alt="" class="p-2" width="512px" height="512px" />
+          <a href="https://www.facebook.com/gourkrishna.dey.37" class="flex justify-center items-center p-1 active:translate-x-2 active:translate-y-2 duration-300">
+            <img src="./assets/Images/Facebook.png" alt="" class="p-2" width="512px" height="512px" />
           </a>
         </div>
         <!-- SOcial Media Handles ENd -->
 
         <!-- Menu Links -->
-        <div id="menu-content" class="my-0.5 text-white text-xs xl:text-sm 2xl:text-lg">
+        <div id="menu-content" class="py-0.5 text-white text-xs xl:text-sm 2xl:text-base">
           <div class="flex-col gap-2">
             <a href="#about" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">About
               Myself</a>
-            <a href="#experience"
-              class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Experience</a>
-            <a href="#project"
-              class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Projects</a>
-            <a href="#education"
-              class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Education &
+            <a href="#experience" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Experience</a>
+            <a href="#project" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Projects</a>
+            <a href="#education" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Education &
               Certifications</a>
             <a href="#skills" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Skills</a>
-            <a href="#achievements"
-              class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Achievements</a>
-            <a href="#contactSection"
-              class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Contact</a>
+            <a href="#achievements" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Achievements</a>
+            <a href="#contactSection" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Contact</a>
           </div>
         </div>
       </div>
@@ -94,81 +82,96 @@
     <!-- Left Sidebar End -->
 
     <!-- ✅ Right Content Area -->
-    <div class="flex-1 px-4 py-6 lg:py-10 relative z-10">
-      <!-- ✅  Mobile Navbar -->
-      <div class="lg:hidden flex justify-between items-center bg-gray-800 px-6 py-2 sticky z-10 top-0">
-        <div class="w-12">
-          <img src="./Images/Profile.png" alt="Profile" class="rounded-full" />
+    <div class="flex-1 relative z-10 ">
+
+      <!-- Navbar Appears in Smaller device -->
+      <div class="lg:hidden flex justify-between items-center px-6 sticky z-10 bg-teal-600 bg-opacity-90" style="top: 0%;">
+        <div class="flex justify-center items-center w-16 p-1.5">
+          <img src="./Images/Profile.png" alt="" class="rounded-full">
         </div>
-        <button onclick="openBars();" class="w-10">
-          <img src="./Images/Bars.png" alt="Menu Icon" />
+        <button onclick="openBars();" class="w-10 lg:hidden bg-transparent px-2 py-0.5 border-round">
+          <img src="./Images/Bars.png" alt="">
+          <nav id="navList" class="nav -ml-16 fixed z-10 hidden lg:flex flex-col justify-start shadow-md bg-white text-black  py-2 divide-y-2 text-xs font-medium leading-relaxed ">
+            <a href="#about" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">About</a>
+            <a href="#experience" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Experience</a>
+            <a href="#project" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Project</a>
+            <a href="#education" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Education</a>
+            <a href="#skills" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Skills</a>
+            <a href="#achievements" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Achievements</a>
+            <a href="#contactSection" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Contact
+              Us</a>
+            </a>
+          </nav>
         </button>
-        <nav id="navList"
-          class="nav -ml-16 fixed z-10 hidden text-start flex-col justify-start shadow-md bg-white text-black py-2 divide-y-2 text-xs font-medium leading-relaxed">
-          <a href="#about" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">About</a>
-          <a href="#experience" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Experience</a>
-          <a href="#project" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Project</a>
-          <a href="#education" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Education</a>
-          <a href="#skills" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Skills</a>
-          <a href="#achievements" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Achievements</a>
-          <a href="#contactSection" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Contact Us</a>
-        </nav>
       </div>
+      <!-- Navbar Appears in Smaller device -->
 
       <!-- ✅ About Section -->
-      <section id="about" class="mt-6 md:mt-16 text-white">
+      <section id="about" class="mt-6 md:mt-16 py-24 text-white">
         <div class="gap-2 my-8">
           <!-- Left Content -->
-          <div class="flex justify-center items-center text-lg lg:text-xl 2xl:text-xl px-2">
+          <div class="flex justify-center items-center text-lg lg:text-xl 2xl:text-xl px-2 2xl:px-10">
             <div class="flex flex-col justify-center items-start">
               <h1 class="font-bold my-4 py-2 px-3 text-start">
                 I'm
-                <span class="text-xl lg:text-3xl 2xl:text-3xl uppercase text-teal-400">GOUR KRISHNA DEY</span>
+                <span class="text-lg lg:text-xl 2xl:text-2xl uppercase text-teal-400">GOUR KRISHNA DEY</span>
               </h1>
-              <h1 class="text-2xl lg:text-3xl 2xl:text-4xl text-gray-200 px-3 text-start">
+              <h1 class="text-2xl lg:text-3xl 2xl:text-4xl text-gray-100 px-3 text-start">
                 A
-                <span id="profession" class="text-3xl lg:text-4xl 2xl:text-5xl text-amber-400"
-                  style="font-family: 'Caveat Brush', cursive"></span>
+                <span id="profession" class="text-2xl lg:text-3xl 2xl:text-4xl text-amber-400" style="font-family: 'Caveat Brush', cursive"></span>
               </h1>
               <div class="my-4">
-                <p class="text-slate-300 px-3 py-2 text-justify">
-                  Crafting user-centered digital solutions that bridge
-                  creativity and functionality. Let's transform your ideas
-                  into intuitive, stunning web experiences. Explore my
-                  portfolio and let's collaborate.
+                <p class="text-slate-100 px-3 py-2 text-justify text-sm xl:text-base leading-loose tracking-wider">
+                  I'm an aspiring Machine Learning Engineer with a strong inclination towards Natural Language
+                  Processing and Web Development. Currently pursuing my M.Tech at IIIT-Delhi, I enjoy
+                  building intelligent systems, designing robust ML pipelines, and creating responsive web applications.
+                  With hands-on experience in real-world projects, I aim to bridge the gap between AI and user-centric
+                  design to solve impactful problems.
                 </p>
 
                 <!-- Buttons -->
-                <div
-                  class="flex flex-wrap justify-center md:justify-start items-center p-3 gap-3 text-base lg:text-lg 2xl:text-xl">
-                  <a href="./PDF/Gour Krishna Dey_Resume_2024_November.pdf" target="_blank">
-                    <button
-                      class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 border-teal-300 shadow-sm active:translate-x-1 active:translate-y-1 duration-150 hover:bg-teal-600 text-white font-semibold">
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 text-sm xl:text-base py-2 mt-4">
+                  <a href="./assets/PDF/Resume.pdf" target="_blank">
+                    <button class="flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 shadow-sm active:translate-x-1 active:translate-y-1 duration-150 hover:bg-teal-600 text-white font-semibold">
                       View Resume
-                      <img src="./Images/Resume.png" alt="Resume Icon" class="w-8 bg-white p-0.5 rounded-full" />
+                      <img src="./assets/Images/Resume.png" alt="Resume Icon" class="w-8 bg-white p-0.5 rounded-full" />
                     </button>
                   </a>
                   <a href="https://github.com/gkdey17cse" target="_blank">
-                    <button
-                      class="flex justify-center items-center py-1.5 px-4 gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold active:translate-x-1 active:translate-y-1 duration-150">
+                    <button class="flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold active:translate-x-1 active:translate-y-1 duration-150">
                       Explore My Work
-                      <img src="./Images/Explore.png" alt="Explore Icon" class="w-8 bg-white p-0.5 rounded-full" />
+                      <img src="./assets/Images/Explore.png" alt="Explore Icon" class="w-8 bg-white p-0.5 rounded-full" />
                     </button>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Right Image -->
-          <!-- <div class="hidden md:block col-span-2 py-2 px-2 mb-4">
-            <div class="flex justify-center items-center overflow-hidden">
-              <img src="./Images/HeroProfile.png" alt="Hero Image"
-                class="w-max scale-100 hover:scale-90 duration-300" />
-            </div>
-          </div> -->
         </div>
       </section>
+      <!-- ✅ About Section End -->
+
+      <!-- ✅ About Section -->
+      <!-- Experience Section -->
+      <div id="experience" class="mt-16 px-2 2xl:px-10 py-2 bg-transparent shadow-sm">
+        <!-- Heading -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-2">
+          <img src="./assets/Images/Bullet.png" alt="" class="w-7 lg:w-8">
+          <h1 class="text-teal-400 font-bold capitalize text-xl lg:text-2xl 2xl:text-3xl">Experience</h1>
+        </div>
+
+        <!-- Experience Container -->
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-1 py-2 mx-auto mt-1">
+            <div class="divide-y-2 divide-gray-100 px-2 text-xs lg:text-sm 2xl:text-base" id="experienceList">
+              <!-- Dynamic content will be inserted here -->
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- ✅ Experience Section End -->
+
+
     </div>
   </div>
 
@@ -176,6 +179,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./Javascript/scrollspy.js"></script>
   <script src="./Javascript/openBars.js"></script>
+  <script src="./Javascript/experience.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed("#profession", {
