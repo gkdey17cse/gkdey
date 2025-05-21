@@ -1,18 +1,34 @@
 [
   {
     "id": 1,
-    "title": "Interview-Mitra",
-    "subtitle": "AI powered exam portal cum Job Application portal",
-    "logo": "./assets/Images/Project/AI.png",
-    "desc": "Designed and developed UI and Frontend of <b>'Interviewmitra'</b>, an AI-powered exam portal offering a seamless job application platform for students and streamlined hiring opportunities for recruiters with my team members . Leveraged technology to bridge the gap between talent and employers, enhancing recruitment efficiency and career prospects.",
-    "link": "./pagenotfound.html"
+    "title": "Ratatouillegen",
+    "subtitle": "LLM-based Recipe Prediction Platform",
+    "logo": "./assets/Images/Project/Ratatouillegen.png",
+    "desc": "Worked on <b><i>'Ratatouillegen'</i></b> as part of my <b>IP at IIIT-Delhi</b> under Prof. Ganesh Bagler. Designed the frontend using React, <b>integrated APIs</b>, and <b>hosted</b> the platform on CoSyLab's server for seamless LLM-powered recipe generation.",
+    "link": ".https://cosylab.iiitd.edu.in/ratatouillegen/"
   },
   {
     "id": 2,
-    "title": "Urban Spice",
-    "subtitle": "A Restaurant-Cum-Website Fusion for Enhanced Dining Experiences.",
-    "logo": "./assets/Images/Project/KhanaKhazana.png",
-    "desc": "Used HTML for web page structure, Tailwind CSS for visually appealing design, JavaScript and jQuery for interactivity, form validation for user experience, Owl Carousels for image slideshows, Wow.js for scroll animations, Animate.css for captivating animations. Designed a classic, responsive website blending elegance with modern functionality.",
-    "link": "https://gkdey17cse.github.io/UrbanSpice/"
+    "title": "Claim Normalization using Transformers",
+    "subtitle": "NLP Pipeline for Fact-Checking Enhancement",
+    "logo": "./assets/Images/Project/claim.png",
+    "desc": "Built a complete preprocessing pipeline for the <b>CLAN dataset</b> and fine-tuned <b>BART-base</b> & <b>T5-small</b> models for <i>claim normalization</i>, enabling better fact-checking on noisy social media text. Inspired by the paper <i>‘From Chaos to Clarity’</i>.",
+    "link": "https://github.com/gkdey17cse/ClaimNormalization"
+  },
+  {
+    "id": 3,
+    "title": "Multithreaded Program Performance Analysis",
+    "subtitle": "Major Project on Linux Multithreading & perf",
+    "logo": "./assets/Images/Project/perf.png",
+    "desc": "Worked on <b><i>'Multithreaded Program Performance Analysis'</i></b> as a <b>Major Project</b> at IIIT-Delhi. Simulated CPU, memory, I/O, and mixed-bound workloads using multithreaded C code, profiled using Linux's <b><i>perf</i></b> tool. Automated builds via <b>Makefile</b> and visualized performance using thread-scalability graphs.",
+    "link": "https://github.com/gkdey17cse/Multithread-Perf-Analyzer"
+  },
+  {
+    "id": 4,
+    "title": "Interview-Mitra",
+    "subtitle": "AI-powered Exam and Job Application Portal",
+    "logo": "./assets/Images/Project/AI.png",
+    "desc": "Developed the complete <b>UI & frontend</b> of <b><i>'Interview-Mitra'</i></b> as our <b>B.Tech final year major project</b>. Although not yet deployed, we plan to add advanced features before public release.",
+    "link": "./pagenotfound.html"
   }
 ]

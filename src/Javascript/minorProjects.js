@@ -2,12 +2,15 @@ const jsonDataPath = "./data/minorProjects.json";
 
 function createProjectItem(project) {
   return `
-    <div class="item bg-white bg-opacity-90 rounded-lg p-4 text-black flex flex-col h-[400px]">  <!-- fixed height -->
+    <div class="item relative group bg-white bg-opacity-90 rounded-lg p-4 text-black flex flex-col h-[420px]">
       <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="flex flex-col h-full">
         <img src="${project.image}" alt="${project.title}" class="rounded-lg mb-2 max-h-[180px] w-full object-cover" />
         <h3 class="text-lg text-teal-700 font-bold py-1">${project.title}</h3>
-        <h6 class="text-sm text-gray-800 font-semibold py-1">${project.domain}</h6>
-        <p class="text-sm flex-grow text-justify leading-relaxed">${project.description}</p> <!-- flex-grow to push text bottom -->
+        <h6 class="text-sm text-gray-800 font-semibold py-1.5">${project.domain}</h6>
+        <p class="text-sm flex-grow text-justify leading-relaxed py-0.5">${project.description}</p>
+        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white text-lg rounded-lg">
+          Click to view the project
+        </div>
       </a>
     </div>
   `;
