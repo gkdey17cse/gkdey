@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Interview-Mitra",
     "subtitle": "AI powered exam portal cum Job Application portal",
-    "logo": "./assets/Images/AI.png",
+    "logo": "./assets/Images/Project/AI.png",
     "desc": "Designed and developed UI and Frontend of <b>'Interviewmitra'</b>, an AI-powered exam portal offering a seamless job application platform for students and streamlined hiring opportunities for recruiters with my team members . Leveraged technology to bridge the gap between talent and employers, enhancing recruitment efficiency and career prospects.",
     "link": "./pagenotfound.html"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Urban Spice",
     "subtitle": "A Restaurant-Cum-Website Fusion for Enhanced Dining Experiences.",
-    "logo": "./assets/Images/KhanaKhazana.png",
+    "logo": "./assets/Images/Project/KhanaKhazana.png",
     "desc": "Used HTML for web page structure, Tailwind CSS for visually appealing design, JavaScript and jQuery for interactivity, form validation for user experience, Owl Carousels for image slideshows, Wow.js for scroll animations, Animate.css for captivating animations. Designed a classic, responsive website blending elegance with modern functionality.",
     "link": "https://gkdey17cse.github.io/UrbanSpice/"
   }

@@ -1,44 +1,16 @@
 [
   {
+    "title":"Urban Spice",
+    "domain": "Web Development",
+    "description": "A Restaurant-Cum-Website Fusion for Enhanced Dining Experiences. This one is first full fledged Website I created using HTML, CSS, JavaScript, and jQuery.",
+    "image": "./assets/Images/Project/Project_1.jpg",
+    "link": "https://gkdey17cse.github.io/UrbanSpice/"
+  },
+  {
     "title": "Product Landing Page",
     "domain": "Web Development",
     "description": "I've crafted an immersive digital store with HTML, CSS, JavaScript, and Wow.js for an engaging online shopping experience.",
-    "image": "./Images/Project_1.jpg",
+    "image": "./assets/Images/Project/ProductLanding.jpg",
     "link": "https://gkdey17cse.github.io/InfoAidtech_Internship/Task1_ProductLandingPage.html"
-  },
-  {
-    "title": "Simple Calculator",
-    "domain": "Web Development",
-    "description": "Showcasing JavaScript skills and UI design with a functional calculator project, delving into the world of numbers in a concise manner.",
-    "image": "./Images/Project_2.jpg",
-    "link": "https://gkdey17cse.github.io/InfoAidtech_Internship/Task2_Calculator.html"
-  },
-  {
-    "title": "Temperature Converter",
-    "domain": "Web Development",
-    "description": "Experience my temperature converter, effortlessly switching between Centigrade, Kelvin, and Fahrenheit, demonstrating my web app development and user-friendly design prowess.",
-    "image": "./Images/Project_3.jpg",
-    "link": "https://gkdey17cse.github.io/InfoAidtech_Internship/Task3_TemparatureConver.html"
-  },
-  {
-    "title": "To_Do List",
-    "domain": "Web Development",
-    "description": "Crafted a sleek todo list with HTML, Tailwind CSS, and JavaScript, showcasing efficient task management in my portfolio.",
-    "image": "./Images/Project_4_TodoList.jpg",
-    "link": "https://gkdey17cse.github.io/OCTANET_NOVEMBER/todolist.html"
-  },
-  {
-    "title": "Currency Converter",
-    "domain": "Web Development",
-    "description": "I developed a Currency Converter using HTML, Tailwind CSS, and JavaScript, supporting nine major currency conversions, showcased in my portfolio.",
-    "image": "./Images/Project_5_CurrencyConverter.jpg",
-    "link": "https://gkdey17cse.github.io/TechnoHacks_Webdevelopment/src/Task2_CurrencyConverter.html"
-  },
-  {
-    "title": "JQuery Form Validation",
-    "domain": "Web Development",
-    "description": "I developed a form validation system using HTML, Tailwind CSS, and jQuery for efficient client-side validation.",
-    "image": "./Images/Project_6_RegistrationForm.jpg",
-    "link": "https://gkdey17cse.github.io/TechnoHacks_Webdevelopment/src/Task3_RegistrationForm.html"
   }
 ]
