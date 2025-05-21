@@ -15,25 +15,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Owl Caraousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body class="relative text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
   <!-- ✅ Right Section Background Image -->
   <div class="fixed inset-0 right-0 lg:left-[18%] bg-cover bg-center bg-no-repeat -z-20" style="
-        background-image: url('./Images/IIITDImage.jpg');
+        background-image: url('./assets/Images/IIITDImage.jpg');
         background-attachment: fixed;
       "></div>
 
   <!-- ✅ Right Section Overlay -->
   <div class="fixed inset-0 right-0 lg:left-[10%] bg-black opacity-70 -z-10"></div>
 
-  <!-- ✅ Main Layout -->
-  <div class="lg:flex min-h-screen" style="font-family: 'Mulish', sans-serif">
-    <!-- ✅ Left Sidebar -->
-    <div class="hidden lg:flex flex-col w-[20%] bg-gradient-to-b from-teal-700 to-teal-700 via-teal-500 rounded-r-2xl items-center shadow-md sticky top-0 h-screen z-30" style="font-family: 'Raleway', sans-serif">
+  <!-- ✅ Main Grid Layout -->
+  <div class="grid grid-cols-1 lg:grid-cols-5 min-h-screen z-10 relative" style="font-family: 'Mulish', sans-serif">
+
+    <!-- ✅ Left Sidebar (1/6) -->
+    <div class="hidden lg:flex col-span-1 bg-gradient-to-b from-teal-700 to-teal-700 via-teal-500 rounded-r-2xl h-screen sticky top-0 shadow-md">
       <div class="flex flex-col justify-center items-center p-4 gap-6 flex-grow">
         <div class="p-2 w-5/6">
           <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-yellow-300 border-8">
@@ -78,19 +81,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Left Sidebar End -->
 
-    <!-- ✅ Right Content Area -->
-    <div class="flex-1 relative z-10 ">
+    </div>
+
+    <!-- ✅ Right Content Area (5/6) -->
+    <div class="col-span-1 lg:col-span-4 relative z-10">
 
       <!-- Navbar Appears in Smaller device -->
       <div class="lg:hidden flex justify-between items-center px-6 sticky z-10 bg-teal-600 bg-opacity-90" style="top: 0%;">
         <div class="flex justify-center items-center w-16 p-1.5">
-          <img src="./Images/Profile.png" alt="" class="rounded-full">
+          <img src="./assets/Images/Profile.png" alt="" class="rounded-full">
         </div>
         <button onclick="openBars();" class="w-10 lg:hidden bg-transparent px-2 py-0.5 border-round">
-          <img src="./Images/Bars.png" alt="">
+          <img src="./assets/Images/Bars.png" alt="">
           <nav id="navList" class="nav -ml-16 fixed z-10 hidden lg:flex flex-col justify-start shadow-md bg-white text-black  py-2 divide-y-2 text-xs font-medium leading-relaxed ">
             <a href="#about" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">About</a>
             <a href="#experience" class="hover:text-white hover:bg-teal-600 duration-300 px-4 py-1">Experience</a>
@@ -170,28 +173,134 @@
       </div>
       <!-- ✅ Experience Section End -->
 
+      <!-- ✅ Project Section -->
+      <div id="project" class="mt-8 min-h-screen px-2 2xl:px-10 py-8 bg-transparent shadow-sm">
+
+        <!-- Heading 1 -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-2">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">
+              Major Projects that I’ve done yet
+            </h1>
+          </div>
+        </div>
+        <!-- Heading 1 End -->
+
+        <!-- ✅ Major Projects will be dynamically injected here -->
+        <div id="majorProjectsContainer"></div>
+        <!-- ✅ Major Projects will be dynamically injected here End -->
+
+        <!-- Heading 2 -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mt-20">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">
+              Other Projects
+            </h1>
+          </div>
+        </div>
+        <!-- Heading 2 End -->
+
+        <!-- ✅ Minor Projects Carousel -->
+        <section id="minorProjects" class="my-10 px-4 relative">
+          <!-- added relative for nav positioning -->
+          <div class="owl-carousel owl-theme">
+            <!-- project items will be injected here dynamically -->
+          </div>
+          <!-- Style for Caraousel -->
+          <style>
+            #minorProjects .owl-carousel {
+              position: relative;
+            }
+
+            #minorProjects .owl-carousel .owl-nav {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              right: 0;
+              display: flex;
+              justify-content: space-between;
+              padding-left: 0.5rem;
+              /* 8px */
+              padding-right: 0.5rem;
+              transform: translateY(-50%);
+              pointer-events: none;
+              /* disable pointer on container, enable only on buttons */
+            }
+
+            #minorProjects .owl-carousel .owl-nav button.owl-prev,
+            #minorProjects .owl-carousel .owl-nav button.owl-next {
+              pointer-events: auto;
+              background-color: rgba(0, 0, 0, 0.5);
+              border-radius: 9999px;
+              /* fully rounded */
+              color: white;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+              z-index: 10;
+            }
+
+            #minorProjects .owl-carousel .owl-nav button.owl-prev:hover,
+            #minorProjects .owl-carousel .owl-nav button.owl-next:hover {
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+          </style>
+          <!-- Style for Caraousel End -->
+        </section>
+        <!-- ✅ Minor Projects Carousel End -->
+
+
+
+
+
+      </div>
+      <!-- ✅ Project Section End -->
+
 
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- jQuery (only once) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./Javascript/scrollspy.js"></script>
-  <script src="./Javascript/openBars.js"></script>
-  <script src="./Javascript/experience.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jQuery Form Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Typed.js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed("#profession", {
-      strings: [
-        "UI-UX Designer",
-        "Machine Learning Enthusiast",
-        "Web Developer",
-      ],
+      strings: ["UI-UX Designer", "Machine Learning Enthusiast", "Web Developer"],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true,
     });
   </script>
+
+  <!-- Your Custom JS Files -->
+  <script src="./Javascript/scrollspy.js"></script>
+  <script src="./Javascript/openBars.js"></script>
+  <script src="./Javascript/experience.js"></script>
+  <script src="./Javascript/majorProjects.js"></script>
+  <script src="./Javascript/minorProjects.js"></script>
+  <script src="./Javascript/expandCollapse.js"></script>
+
+
 </body>
 
 </html>
