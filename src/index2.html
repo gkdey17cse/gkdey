@@ -88,7 +88,7 @@
     <div class="col-span-1 lg:col-span-4 relative z-10">
 
       <!-- Navbar Appears in Smaller device -->
-      <div class="lg:hidden flex justify-between items-center px-6 sticky z-10 bg-teal-600 bg-opacity-90" style="top: 0%;">
+      <div class="lg:hidden flex justify-between items-center px-6 sticky z-10 bg-teal-600" style="top: 0%;">
         <div class="flex justify-center items-center w-16 p-1.5">
           <img src="./assets/Images/Profile.png" alt="" class="rounded-full">
         </div>
@@ -110,10 +110,10 @@
       <!-- Navbar Appears in Smaller device -->
 
       <!-- ✅ About Section -->
-      <section id="about" class="py-32 text-white">
+      <section id="about" class="py-32 px-2 2xl:px-10 text-white">
         <div class="gap-2 my-8">
           <!-- Left Content -->
-          <div class="flex justify-center items-center text-lg lg:text-xl 2xl:text-xl px-2 2xl:px-10">
+          <div class="flex justify-center items-center text-lg lg:text-xl 2xl:text-xl px-2">
             <div class="flex flex-col justify-center items-start">
               <h1 class="font-bold my-4 py-2 px-3 text-start">
                 I'm
@@ -133,7 +133,7 @@
                 </p>
 
                 <!-- Buttons -->
-                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 text-sm xl:text-base py-2 mt-4">
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 text-sm xl:text-base p-2 mt-4">
                   <a href="./assets/PDF/Resume.pdf" target="_blank">
                     <button class="flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 shadow-sm active:translate-x-1 active:translate-y-1 duration-150 hover:bg-teal-600 text-white font-semibold">
                       View Resume
@@ -268,18 +268,172 @@
       </div>
       <!-- ✅ Project Section End -->
 
+      <!-- ✅ Education Section -->
+      <div id="education" class="mt-2 min-h-screen px-2 2xl:px-10 py-4 bg-transparent shadow-sm">
+        <!-- Heading -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-2">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">Education</h1>
+          </div>
+        </div>
+        <!-- Dynamic Education Content -->
+        <div id="educationContainer"></div>
+
+        <!-- ✅ Certificates -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mt-12">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">Certifications</h1>
+          </div>
+        </div>
+        <div id="certificateContainer" class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 p-1.5">
+          <!-- Cards will be inserted here by JS -->
+        </div>
+        <!-- ✅ Certificates End -->
+      </div>
+      <!-- ✅ Education Section End -->
+
+      <!-- ✅ Skills -->
+      <div id="skills" class="mt-2 px-2 2xl:px-10 py-4 bg-transparent shadow-sm">
+        <!-- Heading -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-8">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">Skills</h1>
+          </div>
+        </div>
+        <div id="skillsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Skill cards will be inserted here by JS -->
+        </div>
+      </div>
+      <!-- ✅ Skills End -->
+
+      <!-- ✅ Achievements -->
+      <div id="achievements" class="w-full mt-4 xl:mt-32 px-2 2xl:px-10 py-4 bg-transparent shadow-sm">
+        <!-- Heading -->
+        <div class="flex justify-start items-center gap-4 px-1 py-2 mb-8">
+          <span>
+            <img src="./assets/Images/Bullet.png" alt="" class="w-8 lg:w-10">
+          </span>
+          <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-teal-400 font-bold capitalize">Achievements</h1>
+          </div>
+        </div>
+        <!-- Achievements -->
+        <div id="achievementsContainer" class="w-full mb-12 px-2 py-1 text-sm md:text-base xl:text-lg">
+          <!-- JS will dynamically insert the cards here -->
+        </div>
+
+      </div>
+      <!-- ✅ Achievements End -->
+
+      <!-- ✅ Contact Section -->
+      <div id="contactSection" class="w-full mt-4 xl:mt-32 px-2 2xl:px-10 py-4 bg-transparent shadow-sm">
+        <!-- Heading -->
+        <!-- Heading -->
+        <div class="flex flex-col gap-1 px-1 py-2 mb-8">
+          <div class="flex justify-start items-center gap-4">
+            <span>
+              <img src="./assets/Images/Bullet.png" alt="Section Icon" class="w-8 lg:w-10">
+            </span>
+            <div class="flex justify-center items-center text-xl lg:text-2xl 2xl:text-3xl">
+              <h1 class="text-teal-400 font-bold capitalize">Contact Me</h1>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="w-full mb-12 px-2 py-1 text-sm lg:text-base">
+          <form id="contactForm" class="w-full max-w-5xl mx-auto space-y-6">
+            <p class="text-center py-4 text-sm lg:text-base text-gray-200">
+              I'm always open to new opportunities and collaborations. Fill out the form and I'll get back to you personally.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-teal-400 mb-2 text-sm lg:text-base font-semibold">Your Name
+                  Subject <span class="text-amber-300">*</span>
+                </label>
+                <input type="text" id="name" name="name" class="bg-white border-2 border-teal-600 text-gray-800 rounded-md w-full px-3 py-2.5" placeholder="Eg. : Kevi Robin Peterson">
+              </div>
+              <div>
+                <label for="email" class="block text-teal-400 mb-2 text-sm lg:text-base font-semibold">Your Email
+                  Subject <span class="text-amber-300">*</span>
+                </label>
+                <input type="email" id="email" name="email" class="bg-white border-2 border-teal-600 text-gray-800 rounded-md w-full px-3 py-2.5" placeholder="name@domain.com">
+              </div>
+            </div>
+
+            <div>
+              <label for="subject" class="block text-teal-400 mb-2 text-sm lg:text-base font-semibold">
+                Subject <span class="text-amber-300">*</span>
+              </label>
+              <input type="text" id="subject" name="subject" class="bg-white border-2 border-teal-600 text-gray-800 rounded-md w-full px-3 py-2.5" placeholder="Looking for Bengali Linguistic QA Tester Position">
+            </div>
+
+            <div>
+              <label for="details" class="block text-teal-400 mb-2 text-sm lg:text-base font-semibold">
+                Details <span class="text-amber-300">*</span>
+              </label>
+              <textarea id="details" name="details" class="bg-white h-28 border-2 border-teal-600 text-gray-800 rounded-md w-full px-3 py-2.5" placeholder="Ex - Native Bengali speaker with expertise in QA testing..."></textarea>
+            </div>
+
+            <div class="flex justify-center items-center">
+              <input id="submitBtn" type="submit" value="Send" class="w-1/4 flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold active:translate-x-1 active:translate-y-1 duration-150" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- ✅ Contact Section End -->
+
+
+      <!-- ✅ Footer -->
+      <div id="footer" class="mt-24 px-3 flex justify-around bg-white bg-opacity-90 items-center border-t-2 border-teal-500 text-teal-700 text-sm lg:text-base 2xl:text-lg">
+        <div class="flex justify-center items-center gap-4 px-2 py-3">
+          <p>©
+            <script>
+              document.write(new Date().getFullYear());
+            </script> Gour Krishna Dey
+          </p>
+        </div>
+        <div class="flex justify-around items-center py-4 gap-4 lg:py-2 lg:gap-2">
+          <a target="_blank" href="https://github.com/gkdey17cse" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="./Images/Github.png" alt="GitHub" class="w-12">
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="./Images/Linkedin.png" alt="LinkedIn" class="w-12">
+          </a>
+          <a target="_blank" href="https://www.facebook.com/gourkrishna.dey.37/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="./Images/Facebook.png" alt="Facebook" class="w-12">
+          </a>
+          <a target="_blank" href="https://www.instagram.com/dhritisundar_de/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="./Images/Instagram.png" alt="Instagram" class="w-12">
+          </a>
+        </div>
+      </div>
+      <!-- ✅ FooterEnd  -->
 
     </div>
   </div>
 
-  <!-- jQuery (only once) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- jQuery (keep only one version, latest stable) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- jQuery Form Validation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- Typed.js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -299,6 +453,11 @@
   <script src="./Javascript/majorProjects.js"></script>
   <script src="./Javascript/minorProjects.js"></script>
   <script src="./Javascript/expandCollapse.js"></script>
+  <script src="./Javascript/education.js"></script>
+  <script src="./Javascript/certificates.js"></script>
+  <script src="./Javascript/skills.js"></script>
+  <script src="./Javascript/achievements.js"></script>
+  <script src="./Javascript/jqueryFormValidation.js"></script>
 
 
 </body>

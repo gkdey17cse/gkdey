@@ -5,7 +5,7 @@
     "subtitle": "LLM-based Recipe Prediction Platform",
     "logo": "./assets/Images/Project/Ratatouillegen.png",
     "desc": "Worked on <b><i>'Ratatouillegen'</i></b> as part of my <b>IP at IIIT-Delhi</b> under Prof. Ganesh Bagler. Designed the frontend using React, <b>integrated APIs</b>, and <b>hosted</b> the platform on CoSyLab's server for seamless LLM-powered recipe generation.",
-    "link": ".https://cosylab.iiitd.edu.in/ratatouillegen/"
+    "link": "https://cosylab.iiitd.edu.in/ratatouillegen/"
   },
   {
     "id": 2,
