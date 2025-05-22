@@ -1,4 +1,4 @@
-fetch('./Data/skills.json')
+fetch('./data/skills.json')
     .then(response => response.json())
     .then(skillsData => {
         const container = document.getElementById('skillsContainer');

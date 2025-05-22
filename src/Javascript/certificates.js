@@ -1,4 +1,4 @@
-fetch('./Data/certificates.json')
+fetch('./data/certificates.json')
   .then(response => response.json())
   .then(certificates => {
     const container = document.getElementById('certificateContainer');
