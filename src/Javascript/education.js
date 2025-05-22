@@ -4,7 +4,7 @@ fetch('./data/educationData.json')
     const container = document.getElementById("educationContainer");
     data.forEach(entry => {
       container.innerHTML += `
-      <div class="px-4 py-4 shadow-md bg-white bg-opacity-90 rounded-md my-4 text-black">
+      <div class="px-4 py-4 shadow-md bg-white bg-opacity-90 rounded-md my-4 text-black wow animate__fadeInDown" data-wow-duration="1s">
         <div class="grid grid-cols-1 lg:grid-cols-10 gap-4 items-center text-center lg:text-start">
           
           <!-- Logo (1/10 on large) -->

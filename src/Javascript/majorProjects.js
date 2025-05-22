@@ -5,7 +5,7 @@ fetch("./data/majorProjects.json")
 
     projects.forEach((project) => {
       const html = `
-        <div class="px-2 mx-4 py-2 shadow-xl rounded-md bg-white bg-opacity-90 text-teal-700 my-4 text-xs lg:text-sm 2xl:text-base leading-relaxed relative group overflow-hidden">
+        <div class="px-2 mx-4 py-2 shadow-xl rounded-md bg-white bg-opacity-90 text-teal-700 my-4 text-xs lg:text-sm 2xl:text-base leading-relaxed relative group overflow-hidden wow animate__fadeInDown" data-wow-duration="1s">
           <!-- Project Header -->
           <div id="project-head-${project.id}" class="grid grid-cols-5 px-2" style='font-family: "Inter", sans-serif;'>
               <div class="col-span-4 flex justify-start gap-4 my-2 items-center">
