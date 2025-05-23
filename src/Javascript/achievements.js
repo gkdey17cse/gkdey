@@ -9,7 +9,7 @@ fetch('./data/achievements.json')
             <p class="text-teal-800 font-semibold">${item.description}</p>
           </div>
           <a href="${item.link}" class="flex justify-center items-center p-2" target="_blank">
-            <img src="./Images/LinkIcon.png" alt="Link" class="w-8">
+            <img src="./assets/Images/LinkIcon.png" alt="Link" class="w-8">
           </a>
         </div>
       `;

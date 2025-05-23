@@ -21,14 +21,14 @@ fetch("./data/majorProjects.json")
               </div>
             <div class="flex justify-center items-center gap-4">
               <a href="${project.link}" target="_blank" class="relative group rounded-full p-1 hover:border-2 border-teal-600">
-                <img src="./Images/LinkIcon.png" class="w-10" alt="Link" />
+                <img src="./assets/Images/LinkIcon.png" class="w-10" alt="Link" />
                 <!-- Tooltip -->
                 <span class="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 bg-black text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-70 transition-opacity whitespace-nowrap z-10">
                   Click to see
                 </span>
               </a>
               <button onclick="toggleProjectBody(${project.id})" class="hover:scale-110 duration-150 ">
-                <img id="arrow-${project.id}" src="./Images/DownArrow.png" class="w-10 transition-transform duration-300" alt="Arrow">
+                <img id="arrow-${project.id}" src="./assets/Images/DownArrow.png" class="w-10 transition-transform duration-300" alt="Arrow">
               </button>
             </div>
           </div>
