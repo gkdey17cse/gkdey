@@ -45,14 +45,12 @@
 </head>
 
 <body class="relative mx-auto text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
-  <!-- ✅ Right Section Background Image -->
-  <div class="fixed inset-0 right-0 lg:left-[18%] bg-cover bg-center bg-no-repeat -z-20" style="
-        background-image: url('./assets/Images/IIITDImage.jpg');
-        background-attachment: fixed;
-      "></div>
+  <!-- ✅ Fullscreen Background Image -->
+  <div class="fixed inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat -z-20" style="background-image: url('./assets/Images/IIITDImage.jpg'); background-attachment: fixed;">
+  </div>
 
-  <!-- ✅ Right Section Overlay -->
-  <div class="fixed inset-0 right-0 lg:left-[10%] bg-black opacity-70 -z-10"></div>
+  <!-- ✅ Fullscreen Overlay -->
+  <div class="fixed inset-0 w-screen h-screen bg-black opacity-70 -z-10"></div>
 
   <!-- ✅ Main Grid Layout -->
   <div class="grid grid-cols-1 lg:grid-cols-5 xl:min-h-screen z-10 relative" style="font-family: 'Mulish', sans-serif">
@@ -90,13 +88,13 @@
         <!-- Menu Links -->
         <div id="menu-content" class="py-0.5 text-white text-xs xl:text-sm 2xl:text-base wow animate__fadeInLeftBig" data-wow-duration="0.5s">
           <div class="flex-col gap-2">
-            <a href="#about" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">About Myself</a>
-            <a href="#experience" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Experience</a>
-            <a href="#project" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Projects</a>
-            <a href="#education" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Education & Certifications</a>
-            <a href="#skills" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Skills</a>
-            <a href="#achievements" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Achievements</a>
-            <a href="#contactSection" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300">Contact</a>
+            <a href="#about" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">About Myself</a>
+            <a href="#experience" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Experience</a>
+            <a href="#project" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Projects</a>
+            <a href="#education" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Education & Certifications</a>
+            <a href="#skills" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Skills</a>
+            <a href="#achievements" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Achievements</a>
+            <a href="#contactSection" class="block p-2 hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Contact</a>
           </div>
         </div>
       </div>
@@ -105,7 +103,7 @@
     <!-- ✅ Right Content Area (5/6) -->
     <div class="col-span-1 lg:col-span-4 relative z-10">
       <!-- Navbar Appears in Smaller device -->
-      <div class="lg:hidden flex justify-between items-center px-6 sticky z-10 bg-teal-600" style="top: 0%">
+      <div class="lg:hidden flex justify-between items-center px-2 lg:px-6 sticky z-10 bg-teal-600" style="top: 0%">
         <div class="flex justify-center items-center w-16 p-1.5">
           <img src="./assets/Images/Profile.png" alt="" class="rounded-full" />
         </div>
@@ -125,7 +123,7 @@
       <!-- Navbar Appears in Smaller device -->
 
       <!-- ✅ About Section -->
-      <section id="about" class="py-32 px-2 2xl:px-10 text-white">
+      <section id="about" class="py-32 px-1 2xl:px-10 text-white">
         <div class="gap-2 my-8">
           <!-- Left Content -->
           <div class="flex justify-center items-center text-lg lg:text-xl 2xl:text-xl px-2">
@@ -151,15 +149,15 @@
                 </p>
 
                 <!-- Buttons -->
-                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 text-sm xl:text-base p-2 mt-4">
+                <div class="flex flex-wrap justify-center md:justify-start items-center gap-3 text-sm xl:text-base p-0.5 lg:p-2 mt-4">
                   <a href="./assets/PDF/Resume.pdf" target="_blank" class="wow animate__fadeInLeft" data-wow-duration="0.6s">
-                    <button class="flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 shadow-sm active:translate-x-1 active:translate-y-1 duration-150 hover:bg-teal-600 text-white font-semibold">
+                    <button class="flex justify-center items-center py-1.5 px-2 xl:px-8 gap-2 border-2 border-teal-300 shadow-sm active:translate-x-1 active:translate-y-1 duration-150 hover:bg-teal-600 text-white font-semibold">
                       View Resume
                       <img src="./assets/Images/Resume.png" alt="Resume Icon" class="w-8 bg-white p-0.5 rounded-full" />
                     </button>
                   </a>
                   <a href="https://github.com/gkdey17cse" target="_blank" class="wow animate__fadeInRight" data-wow-duration="0.6s">
-                    <button class="flex justify-center items-center py-1.5 px-4 xl:px-8 gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold active:translate-x-1 active:translate-y-1 duration-150">
+                    <button class="flex justify-center items-center py-1.5 px-2 xl:px-8 gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold active:translate-x-1 active:translate-y-1 duration-150">
                       Explore My Work
                       <img src="./assets/Images/Explore.png" alt="Explore Icon" class="w-8 bg-white p-0.5 rounded-full" />
                     </button>
@@ -461,8 +459,8 @@
       var typed = new Typed("#profession", {
         strings: [
           "UI-UX Designer",
-          "Machine Learning Enthusiast",
-          "Web Developer",
+          "Aspiring ML Engineer",
+          "Software Developer",
         ],
         typeSpeed: 50,
         backSpeed: 50,
