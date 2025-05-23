@@ -78,5 +78,5 @@ src/
 
 ---
 
-![Portfolio Website Preview](./Website/src/assets/Images/Thumbnail.jpg)
+![Portfolio Website Preview](https://res.cloudinary.com/dkjlvvhmi/image/upload/v1747965003/Thumbnail2_gvtncf.jpg)
 
