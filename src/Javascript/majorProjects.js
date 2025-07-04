@@ -28,7 +28,7 @@ fetch("./data/majorProjects.json")
                 </span>
               </a>
               <button onclick="toggleProjectBody(${project.id})" class="hover:scale-110 duration-150 ">
-                <img id="arrow-${project.id}" src="./assets/Images/DownArrow.png" class="w-10 transition-transform duration-300" alt="Arrow">
+                <img id="arrow-${project.id}" src="./assets/Images/downarrow.jpg" class="w-10 transition-transform duration-300" alt="Arrow">
               </button>
             </div>
           </div>
