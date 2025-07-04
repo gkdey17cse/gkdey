@@ -1,7 +1,7 @@
 **Portfolio Website**
 
 This is a responsive and interactive personal portfolio website for showcasing my academic background, technical skills, projects, certifications, achievements, and contact details. Built to reflect both UI/UX design sense and full-stack development experience, it integrates static and dynamic content using structured JSON and JavaScript rendering. 
-- Hosted at - https://gkdey17cse.github.io/gkdey/src/
+- Hosted at - https://gkdey17cse.github.io/gkdey/src/ or https://gkdey.vercel.app
 
 ---
 
